@@ -1,34 +1,42 @@
 title: "Bozart Botanics"
+email: ""
 description: "Cannabis Wissenschaft • Grow Guides • DWC • Terpene • Seed-to-Harvest"
-theme: jekyll-theme-minimal
+url: "https://bozart-army.github.io"
+baseurl: "/bozart-botanics"
 
-markdown: kramdown
-show_downloads: false
+theme: minimal-mistakes-jekyll
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-include-cache
 
+markdown: kramdown
+
+# Navigation
+header_pages:
+  - index.md
+  - grow/index.md
+  - dwc/index.md
+  - terpene/index.md
+  - strains/index.md
+  - blog/index.md
+
+# Theme settings
+minimal_mistakes_skin: "default"
+
+# Enable sidebar TOC
+toc: true
+toc_label: "Inhalt"
+toc_sticky: true
+
+# Author
 author:
   name: "Bozart Botanics"
-  email: ""
-  url: "https://bozart-army.github.io/bozart-botanics/"
-
-navbar-links:
-  Grow Guides: "/grow/"
-  DWC: "/dwc/"
-  Terpene: "/terpene/"
-  Strains: "/strains/"
-  Blog: "/blog/"
-
-collections:
-  posts:
-    output: true
-  grow:
-    output: true
-  dwc:
-    output: true
-  terpene:
-    output: true
-  strains:
-    output: true
+  bio: "Cannabis Wissenschaft • Grow • Hydroponik • Terpene"
+  links:
+    - label: "GitHub"
+      url: "https://github.com/bozart-army"
+    - label: "YouTube"
+      url: "https://www.youtube.com/@BozartBotanics"
