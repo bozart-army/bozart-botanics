@@ -1,0 +1,34 @@
+title: "Bozart Botanics"
+description: "Cannabis Wissenschaft • Grow Guides • DWC • Terpene • Seed-to-Harvest"
+theme: jekyll-theme-minimal
+
+markdown: kramdown
+show_downloads: false
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+author:
+  name: "Bozart Botanics"
+  email: ""
+  url: "https://bozart-army.github.io/bozart-botanics/"
+
+navbar-links:
+  Grow Guides: "/grow/"
+  DWC: "/dwc/"
+  Terpene: "/terpene/"
+  Strains: "/strains/"
+  Blog: "/blog/"
+
+collections:
+  posts:
+    output: true
+  grow:
+    output: true
+  dwc:
+    output: true
+  terpene:
+    output: true
+  strains:
+    output: true
