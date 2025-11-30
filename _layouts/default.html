@@ -20,11 +20,11 @@
   <body>
     <!-- Top-Bar -->
     <header class="site-header">
-      <div class="brand">
+      <a href="{{ '/' | relative_url }}" class="brand">
         <span class="brand-tag">BB</span>
         <span class="brand-title">Bozart Botanics</span>
         <span class="brand-sub">Grow · Terpene · Strains</span>
-      </div>
+      </a>
 
       {% assign section = page.sidebar | default: "home" %}
 
