@@ -1,35 +1,91 @@
 ---
 layout: default
-title: Strain-Profile
+title: Strain-Profile – Übersicht
 sidebar: strains
 ---
 
-# Strain-Profile
+# Strain-Profile – Übersicht
 
-Dieses Strain-System kombiniert Laborähnliche Terpenprofile, Cannabinoid-
-Daten und Grow-Notizen.  
-Ziel: saubere, nachvollziehbare Profile ohne Marketing-Blabla.
+Hier findest du alle aktuell erfassten Strains auf Bozart Botanics.  
+Jedes Profil enthält:
+
+- Genetik & Grunddaten  
+- Terpenprofil (inkl. Terpen-Radar)  
+- Wirkung (subjektiv)  
+- mögliche Anwendungen (nicht-medizinisch)  
+- Grow-Notizen  
+- kurzes Fazit  
 
 ---
 
 ## Verfügbare Strains
 
-| Strain | Typ | Dominante Terpene | Stärke (subjektiv) | Profil |
-|--------|-----|-------------------|---------------------|--------|
-| **Blackberry Nuggets** | Indica-dominant | Myrcen, Limonen, Caryophyllen | Stark körperlich | [ansehen](/bozart-botanics/strains/blackberry-nuggets/) |
-| **OG Kush** | Hybrid | Limonen, Myrcen, Caryophyllen | Stark | [ansehen](/bozart-botanics/strains/og-kush/) |
-| **Gelato** | Hybrid | Caryophyllen, Limonen, Humulen | Mittel–stark | [ansehen](/bozart-botanics/strains/gelato/) |
-| **Amnesia Haze** | Sativa-dominant | Terpinolen, Myrcen, Pinen | Stark kopflastig | [ansehen](/bozart-botanics/strains/amnesia-haze/) |
-| **Blue Dream** | Sativa-dominant | Myrcen, Pinen, Caryophyllen | Mittel | [ansehen](/bozart-botanics/strains/blue-dream/) |
-| **Wedding Cake** | Indica-hybrid | Caryophyllen, Limonen, Linalool | Stark | [ansehen](/bozart-botanics/strains/wedding-cake/) |
+### OG Kush
+
+Klassischer, würzig-zitroniger Hybrid mit schwerem OG-Body-Effekt.
+
+- Typ: Hybrid (leicht indica-lastig)  
+- Dominante Terpene: Limonen, Myrcen, β-Caryophyllen  
+- Profil: schwer, entspannend, stark  
+
+[Zum Profil →](/strains/og-kush/)
 
 ---
 
-Später können wir Filter einbauen:
+### Gelato
 
-- Terpen-Filter (z. B. „Limonen-dominant“)
-- Wirkung (z. B. „energetisch“, „sedierend“)
-- Grow-Eignung (z. B. DWC/Blütezeit)
-- medizinische Bereiche (z. B. Schlaf/Schmerz/Stress)
+Fruchtig-cremiger Hybrid mit moderner, klarer Wirkung.
 
-Alles rein statisch möglich.
+- Typ: Hybrid  
+- Dominante Terpene: β-Caryophyllen, Limonen, Humulen  
+- Profil: euphorisch, klar, sozial  
+
+[Zum Profil →](/strains/gelato/)
+
+---
+
+### Amnesia Haze
+
+Sativa-Klassiker mit zitruslastigem Aroma und starkem Kopf-High.
+
+- Typ: Sativa-dominant  
+- Dominante Terpene: Terpinolen, Myrcen, Pinen  
+- Profil: energetisch, kreativ, intensiv  
+
+[Zum Profil →](/strains/amnesia-haze/)
+
+---
+
+### Blue Dream
+
+Fruchtiger Tageshybrid – sanft motivierend und vielseitig.
+
+- Typ: Sativa-dominant  
+- Dominante Terpene: Myrcen, Pinen, Caryophyllen  
+- Profil: hell, funktional, angenehm  
+
+[Zum Profil →](/strains/blue-dream/)
+
+---
+
+### Wedding Cake
+
+Schwerer, cremig-würziger Indica-Hybrid mit massiver Harzproduktion.
+
+- Typ: Indica-Hybrid  
+- Dominante Terpene: β-Caryophyllen, Limonen, Linalool  
+- Profil: tief entspannend, sedierend, „Dessert-Strain“  
+
+[Zum Profil →](/strains/wedding-cake/)
+
+---
+
+## Demnächst
+
+Weitere Strain-Profile sind in Vorbereitung, unter anderem:
+
+- Blackberry Nuggets (Bozart Med Grow)
+- Vergleich Indica vs. Sativa in der Praxis
+- spezielle DWC/CO₂-Strain-Erfahrungen
+
+Die Liste wird laufend erweitert, sobald neue Grows dokumentiert sind.
