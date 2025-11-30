@@ -28,10 +28,7 @@ konstant.
 
 ## Tools
 
-Für DWC und andere Hydro-Systeme bietet Bozart Botanics nach und nach
-kleine Hilfstools an:
-
 - [EC-Rechner für Nährstofflösung](/bozart-botanics/dwc/ec-rechner/)
-
-Weitere Tools (pH-Guide, Nährstoffplan-Templates, VPD-Rechner) folgen
-schrittweise.
+- [pH-Grundlagen & Rechner](/bozart-botanics/dwc/ph-tool/)
+- [Nährstoffplan-Template](/bozart-botanics/dwc/naehrstoffplan/)
+- [O₂ im Wasser – Temperaturrechner](/bozart-botanics/dwc/o2-tool/)
