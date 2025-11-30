@@ -1,0 +1,167 @@
+:root {
+  --bg: #070b09;
+  --bg-card: #111816;
+  --accent: #3ddc84;
+  --accent-soft: #2f8f5f;
+  --text: #f5f5f5;
+  --muted: #a5b1aa;
+  --border: #233026;
+  --font-main: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  background: radial-gradient(circle at top, #111816 0, #050706 55%);
+  color: var(--text);
+}
+
+/* Layout */
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+/* Header */
+
+.site-header {
+  border-bottom: 1px solid var(--border);
+  background: rgba(7, 11, 9, 0.95);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.site-title {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.4rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.site-title a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  font-size: 0.9rem;
+}
+
+.site-nav a {
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  text-decoration: none;
+  color: var(--muted);
+  background: rgba(12, 17, 15, 0.9);
+}
+
+.site-nav a:hover {
+  border-color: var(--accent-soft);
+  color: var(--accent);
+}
+
+/* Main content */
+
+.site-main {
+  padding: 1.5rem 0 3rem;
+}
+
+.site-main .container {
+  background: radial-gradient(circle at top left, #17211b 0, #0b100e 40%, #060807 100%);
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* Typography */
+
+h1, h2, h3, h4 {
+  font-family: var(--font-main);
+  letter-spacing: 0.04em;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.25rem;
+}
+
+h3 {
+  font-size: 1.15rem;
+  margin-top: 1.4rem;
+}
+
+p, li {
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+a {
+  color: var(--accent);
+}
+
+/* Tables */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.2rem 0;
+  font-size: 0.9rem;
+}
+
+th, td {
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+
+th {
+  text-align: left;
+  font-weight: 600;
+  color: var(--text);
+}
+
+/* Footer */
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 1rem 0 2rem;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+/* Responsive */
+
+@media (max-width: 720px) {
+  .site-main .container {
+    padding: 1rem;
+    border-radius: 0;
+  }
+
+  .site-nav {
+    gap: 0.4rem;
+  }
+
+  .site-nav a {
+    padding: 0.3rem 0.55rem;
+  }
+}
