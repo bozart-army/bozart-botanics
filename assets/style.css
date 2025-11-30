@@ -164,4 +164,98 @@ th {
   .site-nav a {
     padding: 0.3rem 0.55rem;
   }
+/* Drei-Spalten-Layout */
+
+.layout-grid {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr) 220px;
+  gap: 1.5rem;
+}
+
+/* Sidebars */
+
+.sidebar {
+  background: rgba(5, 8, 7, 0.85);
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  padding: 1rem 1.1rem;
+  font-size: 0.9rem;
+}
+
+.sidebar-title {
+  margin: 0 0 0.6rem 0;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+}
+
+.sidebar-subtitle {
+  margin-top: 1.2rem;
+  margin-bottom: 0.4rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+
+.sidebar-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-list li {
+  margin-bottom: 0.35rem;
+}
+
+.sidebar-list a {
+  text-decoration: none;
+  color: var(--muted);
+}
+
+.sidebar-list a:hover {
+  color: var(--accent);
+}
+
+/* Hauptinhalt in der Mitte */
+
+.content-main {
+  background: radial-gradient(circle at top left, #17211b 0, #0b100e 40%, #060807 100%);
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  padding: 1.5rem 1.75rem;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* Header-Container leicht anpassen */
+
+.header-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+/* Responsive: auf kleinen Screens alles untereinander */
+
+@media (max-width: 960px) {
+  .layout-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    order: 2;
+  }
+
+  .content-main {
+    order: 1;
+    border-radius: 12px;
+  }
+
+  .header-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 }
