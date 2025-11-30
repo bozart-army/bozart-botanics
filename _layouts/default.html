@@ -78,45 +78,54 @@
 
       <!-- Rechte Sidebar – kontextabhängig -->
       <aside class="sidebar sidebar-right">
-        {% if section == "dwc" %}
-          <h2 class="sidebar-title">DWC Tools</h2>
-          <ul class="sidebar-list">
-            <li><a href="{{ "/dwc/dashboard/" | relative_url }}">DWC Dashboard</a></li>
-            <li><a href="{{ "/dwc/ec-rechner/" | relative_url }}">EC-Rechner</a></li>
-            <li><a href="{{ "/dwc/ph-grundlagen/" | relative_url }}">pH-Grundlagen &amp; Rechner</a></li>
-            <li><a href="{{ "/dwc/naehrstoffplan-template/" | relative_url }}">Nährstoffplan-Template</a></li>
-            <li><a href="{{ "/dwc/o2-im-wasser/" | relative_url }}">O₂ im Wasser</a></li>
-          </ul>
-        {% elsif section == "terpene" %}
-          <h2 class="sidebar-title">Terpen-Fokus</h2>
-          <ul class="sidebar-list">
-            <li><a href="{{ "/terpene/" | relative_url }}">Terpen-Übersicht</a></li>
-            <li><a href="{{ "/assets/terpene_lexikon.pdf" | relative_url }}">Terpen-Lexikon (PDF)</a></li>
-            <li><a href="{{ "/terpene/myrcen/" | relative_url }}">Myrcen</a></li>
-            <li><a href="{{ "/terpene/limonen/" | relative_url }}">Limonen</a></li>
-            <li><a href="{{ "/terpene/beta-caryophyllen/" | relative_url }}">β-Caryophyllen</a></li>
-          </ul>
-        {% elsif section == "strains" %}
-          <h2 class="sidebar-title">Strain-Fokus</h2>
-          <ul class="sidebar-list">
-            <li><a href="{{ "/strains/" | relative_url }}">Strain-Übersicht</a></li>
-            <li><a href="{{ "/strains/og-kush/" | relative_url }}">OG Kush</a></li>
-            <li><a href="{{ "/strains/gelato/" | relative_url }}">Gelato</a></li>
-            <li><a href="{{ "/strains/amnesia-haze/" | relative_url }}">Amnesia Haze</a></li>
-            <li><a href="{{ "/strains/blue-dream/" | relative_url }}">Blue Dream</a></li>
-            <li><a href="{{ "/strains/wedding-cake/" | relative_url }}">Wedding Cake</a></li>
-          </ul>
-        {% else %}
-          <h2 class="sidebar-title">Quick Links</h2>
-          <ul class="sidebar-list">
-            <li><a href="{{ "/dwc/dashboard/" | relative_url }}">DWC-Wasserparameter</a></li>
-            <li><a href="{{ "/dwc/vpd-rechner/" | relative_url }}">VPD-Rechner</a></li>
-            <li><a href="{{ "/dwc/dli-rechner/" | relative_url }}">DLI-Rechner</a></li>
-            <li><a href="{{ "/terpene/" | relative_url }}">Terpen-Übersicht</a></li>
-            <li><a href="{{ "/strains/" | relative_url }}">Strain-Übersicht</a></li>
-          </ul>
-        {% endif %}
-      </aside>
+
+  {% if section == "dwc" %}
+    <h2 class="sidebar-title">DWC Tools</h2>
+    <ul class="sidebar-list">
+      <li><a href="{{ "/dwc/dashboard/" | relative_url }}">DWC Dashboard</a></li>
+      <li><a href="{{ "/dwc/ec-rechner/" | relative_url }}">EC-Rechner</a></li>
+      <li><a href="{{ "/dwc/ph-grundlagen/" | relative_url }}">pH-Grundlagen</a></li>
+      <li><a href="{{ "/dwc/naehrstoffplan-template/" | relative_url }}">Nährstoffplan</a></li>
+      <li><a href="{{ "/dwc/o2-im-wasser/" | relative_url }}">O₂ im Wasser</a></li>
+    </ul>
+
+  {% elsif section == "terpene" %}
+    <h2 class="sidebar-title">Terpen-Fokus</h2>
+    <ul class="sidebar-list">
+      <li><a href="{{ "/terpene/" | relative_url }}">Terpen-Übersicht</a></li>
+      <li><a href="{{ "/assets/terpene_lexikon.pdf" | relative_url }}">Terpen-Lexikon (PDF)</a></li>
+      <li><a href="{{ "/terpene/myrcen/" | relative_url }}">Myrcen</a></li>
+      <li><a href="{{ "/terpene/limonen/" | relative_url }}">Limonen</a></li>
+      <li><a href="{{ "/terpene/beta-caryophyllen/" | relative_url }}">β-Caryophyllen</a></li>
+      <li><a href="{{ "/terpene/pinen/" | relative_url }}">Pinen</a></li>
+      <li><a href="{{ "/terpene/linalool/" | relative_url }}">Linalool</a></li>
+      <li><a href="{{ "/terpene/humulen/" | relative_url }}">Humulen</a></li>
+      <li><a href="{{ "/terpene/terpinolen/" | relative_url }}">Terpinolen</a></li>
+    </ul>
+
+  {% elsif section == "strains" %}
+    <h2 class="sidebar-title">Strain-Fokus</h2>
+    <ul class="sidebar-list">
+      <li><a href="{{ "/strains/" | relative_url }}">Strain-Übersicht</a></li>
+      <li><a href="{{ "/strains/og-kush/" | relative_url }}">OG Kush</a></li>
+      <li><a href="{{ "/strains/gelato/" | relative_url }}">Gelato</a></li>
+      <li><a href="{{ "/strains/amnesia-haze/" | relative_url }}">Amnesia Haze</a></li>
+      <li><a href="{{ "/strains/blue-dream/" | relative_url }}">Blue Dream</a></li>
+      <li><a href="{{ "/strains/wedding-cake/" | relative_url }}">Wedding Cake</a></li>
+    </ul>
+
+  {% else %}
+    <h2 class="sidebar-title">Quick Links</h2>
+    <ul class="sidebar-list">
+      <li><a href="{{ "/dwc/dashboard/" | relative_url }}">DWC-Wasserparameter</a></li>
+      <li><a href="{{ "/dwc/vpd-rechner/" | relative_url }}">VPD-Rechner</a></li>
+      <li><a href="{{ "/dwc/dli-rechner/" | relative_url }}">DLI-Rechner</a></li>
+      <li><a href="{{ "/terpene/" | relative_url }}">Terpen-Übersicht</a></li>
+      <li><a href="{{ "/strains/" | relative_url }}">Strain-Übersicht</a></li>
+    </ul>
+  {% endif %}
+
+</aside>
     </div>
 
     <footer class="site-footer">
