@@ -1,12 +1,22 @@
 title: "Bozart Botanics"
 description: "Cannabis Wissenschaft • Grow Guides • DWC • Terpene • Seed-to-Harvest"
+lang: "de"
 
 url: "https://bozart-army.github.io"
 baseurl: "/bozart-botanics"
 
 markdown: kramdown
 
-# (Optional, aber harmless)
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
+
+author:
+  name: "Bozart Botanics"
+  email: ""
+  url: "https://bozart-army.github.io/bozart-botanics/"
+
+social:
+  links:
+    - "https://github.com/bozart-army"
