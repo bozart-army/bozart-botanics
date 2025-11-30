@@ -1,7 +1,9 @@
 ---
 layout: default
 title: Strain Profile
+sidebar: strains
 ---
+
 
 # Strain Profile
 
