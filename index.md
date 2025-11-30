@@ -1,7 +1,20 @@
 ---
 layout: default
 title: Bozart Botanics
+sidebar: home
 ---
+
+<div class="hero">
+  <h1 class="hero-title">Bozart Botanics</h1>
+  <p class="hero-subtitle">
+    Wissenschaftlicher Cannabis-Blog mit Fokus auf medizinische Wirkung, Terpene,
+    DWC-Systeme und echte Seed-to-Harvest-Dokumentationen.
+  </p>
+  <div class="hero-actions">
+    <a class="hero-button" href="{{ '/terpene/' | relative_url }}">🔬 Terpen-Lexikon öffnen</a>
+    <a class="hero-button secondary" href="{{ '/dwc/' | relative_url }}">💧 DWC-Intro lesen</a>
+  </div>
+</div>
 
 # Bozart Botanics
 
