@@ -331,7 +331,7 @@ th {
   box-shadow: 0 10px 22px rgba(0, 0, 0, 0.7);
 }
 
-/* Tools (EC, pH, O2, Nährstoffplan) */
+/* Tools (EC, pH, O2, Nährstoffplan, Dashboard) */
 
 .tool-card {
   margin-top: 1.5rem;
@@ -384,6 +384,71 @@ th {
   color: var(--muted);
 }
 
+/* Dashboard-Layouts & Status */
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  gap: 1.2rem;
+  margin-top: 0.8rem;
+}
+
+.status-box {
+  background: rgba(3, 6, 5, 0.96);
+  border-radius: 14px;
+  padding: 1rem 1.2rem;
+  border: 1px solid var(--border);
+  box-shadow:
+    0 16px 32px rgba(0, 0, 0, 0.8),
+    0 0 26px rgba(61, 220, 132, 0.12);
+}
+
+.status-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.6rem 1rem;
+  margin-top: 0.5rem;
+}
+
+.status-item-title {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.status-pill {
+  display: inline-block;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border: 1px solid transparent;
+}
+
+.status-ok {
+  color: #b9f6ca;
+  background: rgba(76, 175, 80, 0.18);
+  border-color: rgba(76, 175, 80, 0.7);
+}
+
+.status-warn {
+  color: #ffe082;
+  background: rgba(255, 193, 7, 0.18);
+  border-color: rgba(255, 193, 7, 0.7);
+}
+
+.status-bad {
+  color: #ff8a80;
+  background: rgba(244, 67, 54, 0.18);
+  border-color: rgba(244, 67, 54, 0.7);
+}
+
+.status-detail {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-top: 0.3rem;
+}
+
 /* Footer */
 
 .site-footer {
@@ -430,6 +495,14 @@ th {
   }
 
   .tool-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .status-grid {
     grid-template-columns: 1fr;
   }
 }
