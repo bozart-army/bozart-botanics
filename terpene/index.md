@@ -1,79 +1,84 @@
 ---
 layout: default
-title: Terpen-Lexikon
+title: Terpene – Übersicht & Wirkungen
 sidebar: terpene
 ---
 
+# Terpene – Übersicht & Wirkungen
 
-# Terpen-Lexikon
-
-Hier findest du eine evidenzbasierte Übersicht der wichtigsten Cannabis-Terpene
-und ihrer nachweisbaren Wirkungen.
+Terpene sind die aromatischen Moleküle der Cannabispflanze und bestimmen  
+Geruch, Geschmack und einen Teil der Wirkung.  
+Hier findest du die wichtigsten Terpene, ihre Effekte, bekannten  
+Kombinationen und typische medizinische Eigenschaften.
 
 ---
 
-## Übersicht der wichtigsten Terpene
+## Wichtige Terpene im Überblick
 
 ### Myrcen
-Myrcen ist das häufigste Cannabis-Terpen. Es besitzt nachweisbar beruhigende,
-muskelentspannende und entzündungshemmende Wirkung. Es wird häufig mit der
-typischen „Couch-Lock“-Wirkung verbunden.
+- erdig, moschusartig, leicht süß  
+- mögliche Wirkung: entspannend, körperlastig  
+- oft dominant in Indica-Hybriden  
+[Mehr →](/terpene/myrcen/)
 
-### β-Caryophyllen
-β-Caryophyllen ist besonders, weil es als einziges bekanntes Terpen direkt den
-CB2-Rezeptor aktiviert. Dadurch wirkt es deutlich entzündungshemmend,
-schmerzlindernd und angstregulierend.
+---
 
 ### Limonen
-Limonen kommt in fruchtigen, zitruslastigen Sorten vor. Studien zeigen
-stimmungsaufhellende, stressreduzierende und antioxidative Effekte. Es wird
-häufig im Kontext von Angststörungen und Depression untersucht.
+- zitronig, frisch, fruchtig  
+- mögliche Wirkung: aufhellend, stimmungsanhebend  
+- typisch in modernen US-Hybriden  
+[Mehr →](/terpene/limonen/)
+
+---
+
+### β-Caryophyllen
+- würzig, pfeffrig, holzig  
+- einziges Terpen, das direkt CB2-Rezeptoren anspricht  
+- mögliche Wirkung: balancierend, entspannend  
+[Mehr →](/terpene/caryophyllen/)
+
+---
 
 ### Pinen
-Pinen sorgt für den typischen Nadel- und Kräuterduft. Es wirkt
-bronchienerweiternd, entzündungshemmend und kann THC-bedingte
-Gedächtnisprobleme teilweise abmildern.
+- kiefernartig, frisch  
+- mögliche Wirkung: klar, aufmerksam, anti-müdigkeit  
+- kommt häufig in Sativa-Hybriden vor  
+[Mehr →](/terpene/pinen/)
+
+---
 
 ### Linalool
-Linalool kennt man aus Lavendel. Es wirkt beruhigend, anxiolytisch,
-schlaffördernd und antikonvulsiv. Ideal im Kontext von Schlaf, Stress,
-Unruhe und Angst.
+- lavendelartig, floral  
+- mögliche Wirkung: beruhigend, ausgleichend  
+[Mehr →](/terpene/linalool/)
+
+---
 
 ### Humulen
-Humulen stammt ursprünglich aus Hopfen. Es zeigt entzündungshemmende,
-antibakterielle und appetithemmende Eigenschaften – interessant für Nutzer,
-die nicht zusätzlich hungrig werden wollen.
+- holzig, hopfenartig  
+- mögliche Wirkung: balancierend  
+[Mehr →](/terpene/humulen/)
+
+---
 
 ### Terpinolen
-Terpinolen ist seltener, aber typisch für bestimmte Sativa-Linien. Es wirkt
-leicht sedierend, antioxidativ und antibakteriell. In Labormodellen gibt es
-Hinweise auf mögliche anticancerogene Effekte.
-
-### Ocimen
-Ocimen zeigt in Studien anti-inflammatorische, antivirale und antimikrobielle
-Eigenschaften. In vielen Sativas sorgt es für ein frisches, energetisches
-Aroma-Profil.
+- kräuterig, leicht blumig  
+- mögliche Wirkung: aktivierend  
+- typisch in Hazes  
+[Mehr →](/terpene/terpinolen/)
 
 ---
 
-## Tabellenübersicht
+## PDF: Vollständiges Terpenlexikon
 
-| Terpen          | Hauptwirkung                          | Wissenschaftlich belegt                          |
-|-----------------|---------------------------------------|--------------------------------------------------|
-| Myrcen          | Sedierend, muskelrelaxierend          | Sedation, Anti-Inflammation                      |
-| β-Caryophyllen  | Entzündungshemmend, angstlösend       | CB2-Agonist, starke Anti-Inflammation            |
-| Limonen         | Stimmungsaufhellend, antidepressiv    | Humanstudien: Stress- und Angstreduktion         |
-| Pinen           | Bronchienerweiternd, gedächtnisfreundlich | Anti-Inflammation, Gedächtnisschutz          |
-| Linalool        | Beruhigend, schlaffördernd            | GABA-Wirkung, anxiolytische Effekte              |
-| Humulen         | Entzündungshemmend, appetithemmend    | Anti-Inflammation, antibakterielle Effekte       |
-| Terpinolen      | Mild sedierend, antioxidativ          | Antioxidation, antibakterielle Aktivität         |
-| Ocimen          | Anti-inflammatorisch, antiviral       | Antivirale und antimykotische Effekte            |
+Hier findest du das komplette dokumentierte PDF:
+
+👉 [Terpen-Lexikon als PDF herunterladen](/assets/terpene_lexikon.pdf)
 
 ---
 
-## Terpen-PDF
+## Demnächst
 
-Das komplette Terpen-Lexikon kannst du auch als PDF herunterladen
-(sobald die Datei im Repository liegt):
-
-[Terpen-Lexikon als PDF herunterladen](/bozart-botanics/assets/terpene_lexikon.pdf)
+- Terpen-Synergien (Entourage-Effekt)  
+- Terpen-Profile bestimmter berühmter Strains  
+- Tabelle: medizinische Wirkmodelle pro Terpen  
