@@ -1,7 +1,9 @@
 ---
 layout: default
 title: Terpen-Lexikon
+sidebar: terpene
 ---
+
 
 # Terpen-Lexikon
 
