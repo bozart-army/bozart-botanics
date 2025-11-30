@@ -32,19 +32,18 @@ Dominante Terpene:
 
 ### Terpen-Radar (SVG)
 
-```svg
 <svg width="270" height="270" viewBox="0 0 100 100">
   <polygon fill="rgba(61,220,132,0.20)" stroke="#3ddc84"
     points="
-      50,20  <!-- Myrcen (hoch) -->
-      85,30  <!-- Limonen (hoch) -->
-      80,70  <!-- Caryophyllen (mittel) -->
-      50,85  <!-- Pinen (mittel-niedrig) -->
-      20,70  <!-- Linalool (niedrig) -->
-      15,30  <!-- Humulen (mittel-niedrig) -->
+      50,20
+      85,30
+      80,70
+      50,85
+      20,70
+      15,30
     " />
 </svg>
-```
+
 
 ---
 
