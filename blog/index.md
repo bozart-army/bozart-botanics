@@ -1,18 +1,14 @@
 ---
 layout: default
 title: Blog
+sidebar: blog
 ---
 
 # Blog
 
-Hier erscheinen alle neuen Artikel von Bozart Botanics:
+Hier findest du alle aktuellen Artikel von Bozart Botanics.
 
-- Growberichte
-- Equipment-Tests
-- medizinische Analysen
-- Tutorials & Praxis
-- Seed-to-Harvest Dokumentationen
-- Terpen- und Cannabinoidforschung
-- CO₂, Klima & moderne Hydroponik
-
-Neue Beiträge folgen regelmäßig.
+{% for post in site.posts %}
+- [{{ post.title }}]({{ post.url | relative_url }})  
+  <small>{{ post.date | date: "%d.%m.%Y" }}</small>
+{% endfor %}
