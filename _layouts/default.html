@@ -1,84 +1,130 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-  <meta charset="utf-8">
-  <title>
-    {% if page.title %}{{ page.title }} | {% endif %}
-    {{ site.title | default: "Bozart Botanics" }}
-  </title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
-</head>
-<body>
-  <div class="page-wrapper">
-    <!-- Linke Sidebar: Brand + Navigation -->
-    <aside class="sidebar-left">
+  <head>
+    <meta charset="utf-8" />
+    <title>
+      {% if page.title %}
+        {{ page.title }} | Bozart Botanics
+      {% else %}
+        Bozart Botanics
+      {% endif %}
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Bozart Botanics – wissenschaftlicher Cannabis-Grow & Terpen-Blog mit Fokus auf medizinische Wirkung, DWC und Seed-to-Harvest."
+    />
+    <!-- WICHTIG: relative_url sorgt dafür, dass das CSS auch bei GitHub Pages Projekt-URLs geladen wird -->
+    <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+  </head>
+  <body>
+    <!-- Top-Bar -->
+    <header class="site-header">
       <div class="brand">
-        <div class="brand-logo">BB</div>
-        <div class="brand-text">
-          <div class="brand-title">Bozart Botanics</div>
-          <div class="brand-subtitle">Grow · Terpene · Strains</div>
-        </div>
+        <span class="brand-tag">BB</span>
+        <span class="brand-title">Bozart Botanics</span>
+        <span class="brand-sub">Grow · Terpene · Strains</span>
       </div>
 
-      {% assign current = page.url %}
+      {% assign section = page.sidebar | default: "home" %}
 
       <nav class="main-nav">
-        <a href="{{ site.baseurl }}/"
-           class="nav-link{% if current == '/' %} active{% endif %}">
+        <a href="{{ "/" | relative_url }}"
+           class="{% if section == 'home' %}active{% endif %}">
           Home
         </a>
-
-        <a href="{{ site.baseurl }}/terpene/"
-           class="nav-link{% if current contains '/terpene/' %} active{% endif %}">
-          Terpen-Lexikon
+        <a href="{{ "/grow/" | relative_url }}"
+           class="{% if section == 'grow' %}active{% endif %}">
+          Grow Guides
         </a>
-
-        <a href="{{ site.baseurl }}/strains/"
-           class="nav-link{% if current contains '/strains/' %} active{% endif %}">
-          Strain-Profile
+        <a href="{{ "/dwc/" | relative_url }}"
+           class="{% if section == 'dwc' %}active{% endif %}">
+          DWC
         </a>
-
-        <a href="{{ site.baseurl }}/grow/"
-           class="nav-link{% if current contains '/grow/' %} active{% endif %}">
-          Grow-Tools
+        <a href="{{ "/terpene/" | relative_url }}"
+           class="{% if section == 'terpene' %}active{% endif %}">
+          Terpene
         </a>
-
-        <a href="{{ site.baseurl }}/blog/"
-           class="nav-link{% if current contains '/blog/' or current contains '/posts/' %} active{% endif %}">
+        <a href="{{ "/strains/" | relative_url }}"
+           class="{% if section == 'strains' %}active{% endif %}">
+          Strains
+        </a>
+        <a href="{{ "/blog/" | relative_url }}"
+           class="{% if section == 'blog' %}active{% endif %}">
           Blog
         </a>
       </nav>
-    </aside>
+    </header>
 
-    <!-- Hauptinhalt -->
-    <main class="content">
-      <div class="page-content">
-        {{ content }}
-      </div>
-    </main>
-
-    <!-- Rechte Sidebar: Quick-Links & Info -->
-    <aside class="sidebar-right">
-      <div class="sidebar-box">
-        <h3>Quick Links</h3>
-        <ul>
-          <li><a href="{{ site.baseurl }}/grow/dwc-dashboard/">DWC-Wasserparameter</a></li>
-          <li><a href="{{ site.baseurl }}/grow/vpd-tool/">VPD-Rechner</a></li>
-          <li><a href="{{ site.baseurl }}/grow/dli-tool/">DLI-Rechner</a></li>
-          <li><a href="{{ site.baseurl }}/terpene/">Terpen-Lexikon</a></li>
-          <li><a href="{{ site.baseurl }}/strains/">Strain-Übersicht</a></li>
+    <!-- Dreispaltiges Layout -->
+    <div class="page-shell">
+      <!-- Linke Sidebar – allgemeine Navigation -->
+      <aside class="sidebar sidebar-left">
+        <h2 class="sidebar-title">Navigation</h2>
+        <ul class="sidebar-list">
+          <li><a href="{{ "/" | relative_url }}">Startseite</a></li>
+          <li><a href="{{ "/blog/" | relative_url }}">Blog – alle Artikel</a></li>
+          <li><a href="{{ "/terpene/" | relative_url }}">Terpen-Übersicht</a></li>
+          <li><a href="{{ "/dwc/" | relative_url }}">DWC &amp; Hydroponik</a></li>
+          <li><a href="{{ "/strains/" | relative_url }}">Strain-Profile</a></li>
+          <li><a href="{{ "/grow/" | relative_url }}">Grow-Guides</a></li>
         </ul>
-      </div>
+      </aside>
 
-      <div class="sidebar-box">
-        <h3>Über Bozart Botanics</h3>
-        <p>
-          Unabhängiges Projekt rund um medizinischen Anbau,
-          Terpene, Strain-Profile und praktische Grow-Tools.
-        </p>
+      <!-- Hauptinhalt -->
+      <main class="page-main">
+        {{ content }}
+      </main>
+
+      <!-- Rechte Sidebar – kontextabhängig -->
+      <aside class="sidebar sidebar-right">
+        {% if section == "dwc" %}
+          <h2 class="sidebar-title">DWC Tools</h2>
+          <ul class="sidebar-list">
+            <li><a href="{{ "/dwc/dashboard/" | relative_url }}">DWC Dashboard</a></li>
+            <li><a href="{{ "/dwc/ec-rechner/" | relative_url }}">EC-Rechner</a></li>
+            <li><a href="{{ "/dwc/ph-grundlagen/" | relative_url }}">pH-Grundlagen &amp; Rechner</a></li>
+            <li><a href="{{ "/dwc/naehrstoffplan-template/" | relative_url }}">Nährstoffplan-Template</a></li>
+            <li><a href="{{ "/dwc/o2-im-wasser/" | relative_url }}">O₂ im Wasser</a></li>
+          </ul>
+        {% elsif section == "terpene" %}
+          <h2 class="sidebar-title">Terpen-Fokus</h2>
+          <ul class="sidebar-list">
+            <li><a href="{{ "/terpene/" | relative_url }}">Terpen-Übersicht</a></li>
+            <li><a href="{{ "/assets/terpene_lexikon.pdf" | relative_url }}">Terpen-Lexikon (PDF)</a></li>
+            <li><a href="{{ "/terpene/myrcen/" | relative_url }}">Myrcen</a></li>
+            <li><a href="{{ "/terpene/limonen/" | relative_url }}">Limonen</a></li>
+            <li><a href="{{ "/terpene/beta-caryophyllen/" | relative_url }}">β-Caryophyllen</a></li>
+          </ul>
+        {% elsif section == "strains" %}
+          <h2 class="sidebar-title">Strain-Fokus</h2>
+          <ul class="sidebar-list">
+            <li><a href="{{ "/strains/" | relative_url }}">Strain-Übersicht</a></li>
+            <li><a href="{{ "/strains/og-kush/" | relative_url }}">OG Kush</a></li>
+            <li><a href="{{ "/strains/gelato/" | relative_url }}">Gelato</a></li>
+            <li><a href="{{ "/strains/amnesia-haze/" | relative_url }}">Amnesia Haze</a></li>
+            <li><a href="{{ "/strains/blue-dream/" | relative_url }}">Blue Dream</a></li>
+            <li><a href="{{ "/strains/wedding-cake/" | relative_url }}">Wedding Cake</a></li>
+          </ul>
+        {% else %}
+          <h2 class="sidebar-title">Quick Links</h2>
+          <ul class="sidebar-list">
+            <li><a href="{{ "/dwc/dashboard/" | relative_url }}">DWC-Wasserparameter</a></li>
+            <li><a href="{{ "/dwc/vpd-rechner/" | relative_url }}">VPD-Rechner</a></li>
+            <li><a href="{{ "/dwc/dli-rechner/" | relative_url }}">DLI-Rechner</a></li>
+            <li><a href="{{ "/terpene/" | relative_url }}">Terpen-Übersicht</a></li>
+            <li><a href="{{ "/strains/" | relative_url }}">Strain-Übersicht</a></li>
+          </ul>
+        {% endif %}
+      </aside>
+    </div>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <span>© {{ "now" | date: "%Y" }} Bozart Botanics</span>
+        <span class="footer-dot">·</span>
+        <span>Wissenschaftlicher Grow &amp; Terpen-Blog</span>
       </div>
-    </aside>
-  </div>
-</body>
+    </footer>
+  </body>
 </html>
