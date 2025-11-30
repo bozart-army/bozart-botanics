@@ -6,20 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+
+  {%- seo -%}
 </head>
 <body>
   <header class="site-header">
     <div class="container header-bar">
       <h1 class="site-title">
-        <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
+        <a href="{{ '/' | relative_url }}">BOZART BOTANICS</a>
       </h1>
       <nav class="site-nav">
-        <a href="{{ '/'         | relative_url }}">Home</a>
-        <a href="{{ '/grow/'    | relative_url }}">Grow Guides</a>
-        <a href="{{ '/dwc/'     | relative_url }}">DWC</a>
-        <a href="{{ '/terpene/' | relative_url }}">Terpene</a>
-        <a href="{{ '/strains/' | relative_url }}">Strains</a>
-        <a href="{{ '/blog/'    | relative_url }}">Blog</a>
+        <a href="{{ '/'         | relative_url }}">🏠 Home</a>
+        <a href="{{ '/grow/'    | relative_url }}">🌱 Grow Guides</a>
+        <a href="{{ '/dwc/'     | relative_url }}">💧 DWC</a>
+        <a href="{{ '/terpene/' | relative_url }}">🔬 Terpene</a>
+        <a href="{{ '/strains/' | relative_url }}">🌿 Strains</a>
+        <a href="{{ '/blog/'    | relative_url }}">📰 Blog</a>
       </nav>
     </div>
   </header>
@@ -27,7 +29,7 @@
   <main class="site-main">
     <div class="container layout-grid">
 
-      <!-- LINKER SIDEBAR -->
+      <!-- LINKER SIDEBAR: immer Navigation -->
       <aside class="sidebar sidebar-left">
         <h2 class="sidebar-title">Navigation</h2>
         <ul class="sidebar-list">
@@ -45,20 +47,64 @@
         {{ content }}
       </article>
 
-      <!-- RECHTER SIDEBAR -->
+      <!-- RECHTER SIDEBAR: dynamisch nach page.sidebar -->
       <aside class="sidebar sidebar-right">
-        <h2 class="sidebar-title">Quick Info</h2>
-        <ul class="sidebar-list">
-          <li><a href="{{ '/assets/terpene_lexikon.pdf' | relative_url }}">Terpen-Lexikon (PDF)</a></li>
-          <li><a href="{{ '/terpene/' | relative_url }}">Wirkungen der Terpene</a></li>
-        </ul>
+        {% if page.sidebar == "terpene" %}
+          <h2 class="sidebar-title">Terpene</h2>
+          <ul class="sidebar-list">
+            <li><a href="{{ '/terpene/' | relative_url }}">Terpen-Übersicht</a></li>
+            <li><a href="{{ '/assets/terpene_lexikon.pdf' | relative_url }}">Terpen-Lexikon (PDF)</a></li>
+          </ul>
+          <h3 class="sidebar-subtitle">Nächste Inhalte</h3>
+          <ul class="sidebar-list">
+            <li>Einfluss der Terpene auf Wirkung</li>
+            <li>Terpen-Profile nach Sorten</li>
+          </ul>
 
-        <h3 class="sidebar-subtitle">Demnächst</h3>
-        <ul class="sidebar-list">
-          <li>Seed-to-Harvest DWC-Serie</li>
-          <li>Blackberry Nuggets Strain-Report</li>
-          <li>CO₂-Optimierungs-Guide</li>
-        </ul>
+        {% elsif page.sidebar == "dwc" %}
+          <h2 class="sidebar-title">DWC Tools</h2>
+          <ul class="sidebar-list">
+            <li>EC/pH-Grundlagen (coming soon)</li>
+            <li>DWC Checkliste (coming soon)</li>
+            <li>Nährstoffpläne (coming soon)</li>
+          </ul>
+
+        {% elsif page.sidebar == "grow" %}
+          <h2 class="sidebar-title">Grow Basics</h2>
+          <ul class="sidebar-list">
+            <li>Klima & VPD (coming soon)</li>
+            <li>Licht & Abstand (coming soon)</li>
+            <li>Training & Mainlining (coming soon)</li>
+          </ul>
+
+        {% elsif page.sidebar == "strains" %}
+          <h2 class="sidebar-title">Strain-Fokus</h2>
+          <ul class="sidebar-list">
+            <li>Blackberry Nuggets (coming soon)</li>
+            <li>Sortenvergleich Indica/Sativa (coming soon)</li>
+          </ul>
+
+        {% elsif page.sidebar == "blog" %}
+          <h2 class="sidebar-title">Blog-Info</h2>
+          <ul class="sidebar-list">
+            <li><a href="{{ '/blog/' | relative_url }}">Neueste Artikel</a></li>
+            <li>FAQ & Kontakt (coming soon)</li>
+          </ul>
+
+        {% else %}
+          <!-- Default Sidebar -->
+          <h2 class="sidebar-title">Quick Info</h2>
+          <ul class="sidebar-list">
+            <li><a href="{{ '/assets/terpene_lexikon.pdf' | relative_url }}">Terpen-Lexikon (PDF)</a></li>
+            <li><a href="{{ '/terpene/' | relative_url }}">Wirkungen der Terpene</a></li>
+          </ul>
+          <h3 class="sidebar-subtitle">Demnächst</h3>
+          <ul class="sidebar-list">
+            <li>Seed-to-Harvest DWC-Serie</li>
+            <li>Blackberry Nuggets Strain-Report</li>
+            <li>CO₂-Optimierungs-Guide</li>
+          </ul>
+        {% endif %}
       </aside>
 
     </div>
