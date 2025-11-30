@@ -1,48 +1,75 @@
+<!-- LEFT SIDEBAR – Navigation für Grow, DWC, Terpene, Strains -->
+
 <div class="sidebar sidebar-left">
-  <!-- GROW-METHODEN -->
-  <h2 class="sidebar-title">Grow-Methoden</h2>
+
+  {% assign section = page.sidebar | default: "home" %}
+
+  <!-- HOME -->
+  <h3 class="sidebar-title">Home</h3>
   <ul class="sidebar-list">
-    <li><a href="{{ "/grow/methoden/erde/" | relative_url }}">Erde (Soil)</a></li>
-    <li><a href="{{ "/grow/methoden/bio-erde/" | relative_url }}">Bio-Erde (Organisch)</a></li>
-    <li><a href="{{ "/grow/methoden/living-soil/" | relative_url }}">Living Soil</a></li>
-
-    <li><a href="{{ "/grow/methoden/coco/" | relative_url }}">Coco</a></li>
-    <li><a href="{{ "/grow/methoden/steinwolle/" | relative_url }}">Steinwolle (Rockwool)</a></li>
-
-    <li><a href="{{ "/grow/methoden/hydro/" | relative_url }}">Hydroponik (Allgemein)</a></li>
-    <li><a href="{{ "/grow/methoden/ebbe-und-flut/" | relative_url }}">Ebbe &amp; Flut (Flood &amp; Drain)</a></li>
-    <li><a href="{{ "/grow/methoden/tropf/" | relative_url }}">Tropfbewässerung (DTW &amp; Recirc)</a></li>
-    <li><a href="{{ "/grow/methoden/dwc/" | relative_url }}">DWC (Deep Water Culture)</a></li>
-    <li><a href="{{ "/grow/methoden/rdwc/" | relative_url }}">RDWC (Recirculating DWC)</a></li>
-    <li><a href="{{ "/grow/methoden/aeroponik/" | relative_url }}">Aeroponik (LPA &amp; HPA)</a></li>
-    <li><a href="{{ "/grow/methoden/nft/" | relative_url }}">NFT (Nutrient Film Technique)</a></li>
-    <li><a href="{{ "/grow/methoden/autopot/" | relative_url }}">AutoPot (FlexiPot &amp; Hydro)</a></li>
+    <li><a href="{{ "/" | relative_url }}">Startseite</a></li>
   </ul>
 
-  <!-- DÜNGESTRATEGIEN -->
-  <h2 class="sidebar-title">Düngestrategien</h2>
+  <!-- GROW -->
+  <h3 class="sidebar-title">Grow Guides</h3>
   <ul class="sidebar-list">
-    <li><a href="{{ "/grow/duenger/mineralisch/" | relative_url }}">Mineralische Düngung</a></li>
-    <!-- Organisch / Hybrid können wir verlinken, sobald die Seiten fertig sind -->
+    <li><a href="{{ "/grow/" | relative_url }}">Übersicht</a></li>
+    <li><a href="{{ "/grow/erde/" | relative_url }}">Erde</a></li>
+    <li><a href="{{ "/grow/coco/" | relative_url }}">Coco</a></li>
+    <li><a href="{{ "/grow/hydro/" | relative_url }}">Hydro (allgemein)</a></li>
+    <li><a href="{{ "/grow/flood-drain/" | relative_url }}">Ebbe & Flut</a></li>
+    <li><a href="{{ "/grow/dwc/" | relative_url }}">DWC</a></li>
+    <li><a href="{{ "/grow/rdwc/" | relative_url }}">RDWC</a></li>
+    <li><a href="{{ "/grow/tropf/" | relative_url }}">Tropfbewässerung</a></li>
+    <li><a href="{{ "/grow/aeroponik/" | relative_url }}">Aeroponik</a></li>
+    <li><a href="{{ "/grow/nft/" | relative_url }}">NFT</a></li>
+    <li><a href="{{ "/grow/autopot/" | relative_url }}">AutoPot</a></li>
+    <li><a href="{{ "/grow/steinwolle/" | relative_url }}">Steinwolle</a></li>
+    <li><a href="{{ "/grow/living-soil/" | relative_url }}">Living Soil</a></li>
+    <li><a href="{{ "/grow/bio-erde/" | relative_url }}">Bio-Erde / Organisch</a></li>
+
+    <li><a href="{{ "/grow/mineralisch/" | relative_url }}">Mineralisch</a></li>
+    <li><a href="{{ "/grow/organisch/" | relative_url }}">Organisch</a></li>
+    <li><a href="{{ "/grow/hybrid/" | relative_url }}">Hybrid-Düngung</a></li>
+    <li><a href="{{ "/grow/organisch-mineralisch/" | relative_url }}">Organisch-Mineralisch</a></li>
+
+    <li><a href="{{ "/grow/vpd/" | relative_url }}">VPD</a></li>
+    <li><a href="{{ "/grow/dli/" | relative_url }}">DLI</a></li>
+    <li><a href="{{ "/grow/light-ppfd/" | relative_url }}">Licht & PPFD</a></li>
+    <li><a href="{{ "/grow/ec-ph/" | relative_url }}">EC & pH</a></li>
+    <li><a href="{{ "/grow/training/" | relative_url }}">Training & Stress</a></li>
+    <li><a href="{{ "/grow/trocknen-curen/" | relative_url }}">Trocknen & Curen</a></li>
+    <li><a href="{{ "/grow/erntezeitpunkt/" | relative_url }}">Ernte & Trichome</a></li>
+    <li><a href="{{ "/grow/pest-pathogen/" | relative_url }}">Pest & Pathogen Guide</a></li>
   </ul>
 
-  <!-- TERPENE -->
-  <h2 class="sidebar-title">Terpene</h2>
+  <!-- DWC -->
+  <h3 class="sidebar-title">DWC Tools</h3>
   <ul class="sidebar-list">
-    <li><a href="{{ "/terpene/" | relative_url }}">Terpen-Übersicht</a></li>
+    <li><a href="{{ "/dwc/" | relative_url }}">DWC Übersicht</a></li>
+    <li><a href="{{ "/dwc/ph-grundlagen/" | relative_url }}">pH Grundlagen</a></li>
+    <li><a href="{{ "/dwc/wasserparameter/" | relative_url }}">Wasserparameter Dashboard</a></li>
+    <li><a href="{{ "/dwc/naehrstoffplan-template/" | relative_url }}">Nährstoffplan</a></li>
+    <li><a href="{{ "/dwc/o2-im-wasser/" | relative_url }}">O₂ im Wasser</a></li>
+  </ul>
+
+  <!-- Terpene -->
+  <h3 class="sidebar-title">Terpene</h3>
+  <ul class="sidebar-list">
+    <li><a href="{{ "/terpene/" | relative_url }}">Terpen Übersicht</a></li>
     <li><a href="{{ "/terpene/myrcen/" | relative_url }}">Myrcen</a></li>
     <li><a href="{{ "/terpene/limonen/" | relative_url }}">Limonen</a></li>
-    <li><a href="{{ "/terpene/beta-caryophyllen/" | relative_url }}">β-Caryophyllen</a></li>
+    <li><a href="{{ "/terpene/caryophyllen/" | relative_url }}">β-Caryophyllen</a></li>
     <li><a href="{{ "/terpene/pinen/" | relative_url }}">Pinen</a></li>
     <li><a href="{{ "/terpene/linalool/" | relative_url }}">Linalool</a></li>
     <li><a href="{{ "/terpene/humulen/" | relative_url }}">Humulen</a></li>
-    <li><a href="{{ "/terpene/ocimen/" | relative_url }}">Ocimen</a></li>
     <li><a href="{{ "/terpene/terpinolen/" | relative_url }}">Terpinolen</a></li>
   </ul>
 
-  <!-- STRAINS -->
-  <h2 class="sidebar-title">Strains</h2>
+  <!-- Strains -->
+  <h3 class="sidebar-title">Strains</h3>
   <ul class="sidebar-list">
+    <li><a href="{{ "/strains/" | relative_url }}">Strain Übersicht</a></li>
     <li><a href="{{ "/strains/og-kush/" | relative_url }}">OG Kush</a></li>
     <li><a href="{{ "/strains/gelato/" | relative_url }}">Gelato</a></li>
     <li><a href="{{ "/strains/amnesia-haze/" | relative_url }}">Amnesia Haze</a></li>
@@ -50,11 +77,10 @@
     <li><a href="{{ "/strains/wedding-cake/" | relative_url }}">Wedding Cake</a></li>
   </ul>
 
-  <!-- GROW-GUIDES / KNOWLEDGE -->
-  <h2 class="sidebar-title">Grow-Wissen</h2>
+  <!-- Blog -->
+  <h3 class="sidebar-title">Blog</h3>
   <ul class="sidebar-list">
-    <li><a href="{{ "/grow/" | relative_url }}">Grow-Übersicht</a></li>
-    <li><a href="{{ "/dwc/" | relative_url }}">DWC-Übersicht</a></li>
-    <li><a href="{{ "/blog/" | relative_url }}">Blog &amp; Updates</a></li>
+    <li><a href="{{ "/blog/" | relative_url }}">Alle Blogposts</a></li>
   </ul>
+
 </div>
