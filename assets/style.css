@@ -10,10 +10,7 @@
   --font-mono: "JetBrains Mono", Menlo, Monaco, Consolas, "Liberation Mono", monospace;
 }
 
-* {
-  box-sizing: border-box;
-}
-
+/* Grundlayout */
 body {
   margin: 0;
   font-family: var(--font-main);
@@ -21,16 +18,13 @@ body {
   color: var(--text);
 }
 
-/* Layout */
-
 .container {
-  max-width: 960px;
+  max-width: 1250px;
   margin: 0 auto;
   padding: 1.5rem;
 }
 
 /* Header */
-
 .site-header {
   border-bottom: 1px solid var(--border);
   background: rgba(7, 11, 9, 0.95);
@@ -40,32 +34,31 @@ body {
   z-index: 10;
 }
 
-.site-title {
-  margin: 0 0 0.5rem 0;
-  font-size: 1.4rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+.header-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 .site-title a {
   color: var(--accent);
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .site-nav {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.6rem;
-  font-size: 0.9rem;
+  gap: 1rem;
 }
 
 .site-nav a {
+  text-decoration: none;
   padding: 0.4rem 0.75rem;
   border-radius: 999px;
-  border: 1px solid transparent;
-  text-decoration: none;
-  color: var(--muted);
   background: rgba(12, 17, 15, 0.9);
+  border: 1px solid transparent;
+  color: var(--muted);
 }
 
 .site-nav a:hover {
@@ -73,130 +66,36 @@ body {
   color: var(--accent);
 }
 
-/* Main content */
-
-.site-main {
-  padding: 1.5rem 0 3rem;
-}
-
-.site-main .container {
-  background: radial-gradient(circle at top left, #17211b 0, #0b100e 40%, #060807 100%);
-  border-radius: 18px;
-  border: 1px solid var(--border);
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.6);
-}
-
-/* Typography */
-
-h1, h2, h3, h4 {
-  font-family: var(--font-main);
-  letter-spacing: 0.04em;
-}
-
-h1 {
-  font-size: 2rem;
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-
-h2 {
-  font-size: 1.4rem;
-  margin-top: 2rem;
-  border-bottom: 1px solid var(--border);
-  padding-bottom: 0.25rem;
-}
-
-h3 {
-  font-size: 1.15rem;
-  margin-top: 1.4rem;
-}
-
-p, li {
-  line-height: 1.6;
-  color: var(--muted);
-}
-
-a {
-  color: var(--accent);
-}
-
-/* Tables */
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 1.2rem 0;
-  font-size: 0.9rem;
-}
-
-th, td {
-  padding: 0.5rem 0.75rem;
-  border-bottom: 1px solid var(--border);
-}
-
-th {
-  text-align: left;
-  font-weight: 600;
-  color: var(--text);
-}
-
-/* Footer */
-
-.site-footer {
-  border-top: 1px solid var(--border);
-  padding: 1rem 0 2rem;
-  font-size: 0.8rem;
-  color: var(--muted);
-}
-
-/* Responsive */
-
-@media (max-width: 720px) {
-  .site-main .container {
-    padding: 1rem;
-    border-radius: 0;
-  }
-
-  .site-nav {
-    gap: 0.4rem;
-  }
-
-  .site-nav a {
-    padding: 0.3rem 0.55rem;
-  }
-/* Drei-Spalten-Layout */
-
+/* 3-Spalten-Layout */
 .layout-grid {
   display: grid;
-  grid-template-columns: 220px minmax(0, 1fr) 220px;
+  grid-template-columns: 240px minmax(0, 1fr) 240px;
   gap: 1.5rem;
 }
 
 /* Sidebars */
-
 .sidebar {
-  background: rgba(5, 8, 7, 0.85);
-  border-radius: 14px;
+  background: rgba(8, 12, 11, 0.8);
   border: 1px solid var(--border);
-  padding: 1rem 1.1rem;
+  border-radius: 12px;
+  padding: 1rem 1.2rem;
   font-size: 0.9rem;
 }
 
 .sidebar-title {
-  margin: 0 0 0.6rem 0;
+  margin-top: 0;
+  color: var(--accent);
   font-size: 0.95rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--accent);
 }
 
 .sidebar-subtitle {
   margin-top: 1.2rem;
   margin-bottom: 0.4rem;
   font-size: 0.9rem;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
   color: var(--muted);
+  text-transform: uppercase;
 }
 
 .sidebar-list {
@@ -218,27 +117,24 @@ th {
   color: var(--accent);
 }
 
-/* Hauptinhalt in der Mitte */
-
+/* Hauptinhalt */
 .content-main {
   background: radial-gradient(circle at top left, #17211b 0, #0b100e 40%, #060807 100%);
   border-radius: 18px;
+  padding: 1.7rem 2rem;
   border: 1px solid var(--border);
-  padding: 1.5rem 1.75rem;
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.6);
 }
 
-/* Header-Container leicht anpassen */
-
-.header-bar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1.5rem;
+/* Footer */
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 1rem 0 2rem;
+  font-size: 0.8rem;
+  color: var(--muted);
 }
 
-/* Responsive: auf kleinen Screens alles untereinander */
-
+/* Mobile */
 @media (max-width: 960px) {
   .layout-grid {
     grid-template-columns: 1fr;
@@ -250,12 +146,5 @@ th {
 
   .content-main {
     order: 1;
-    border-radius: 12px;
   }
-
-  .header-bar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
 }
