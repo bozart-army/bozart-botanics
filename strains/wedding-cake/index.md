@@ -6,9 +6,7 @@ sidebar: strains
 
 # Wedding Cake – Strain-Profil
 
-Wedding Cake ist ein moderner Indica-Hybrid mit massiv dichten Blüten,
-cremigem Dessert-Aroma und sehr starkem Effekt. Bekannt für seine
-Schwere, sein warmes Körpergefühl und extreme Harzproduktion.
+Wedding Cake ist ein schwerer, cremig-würziger Indica-Hybrid mit extrem dichten Buds und massiver Harzproduktion.
 
 ---
 
@@ -17,70 +15,51 @@ Schwere, sein warmes Körpergefühl und extreme Harzproduktion.
 - Typ: Indica-Hybrid  
 - Kreuzung: Triangle Kush × Animal Mints  
 - THC: sehr hoch  
-- CBD: niedrig  
-- Besonderheiten: extrem dichte Buds, kräftiges Aroma, hoher Harzanteil
+- Besonderheiten: extrem dicht, sehr stark
 
 ---
 
 ## Terpenprofil (visuelle Darstellung)
 
-Dominante Terpene:
-
-- β-Caryophyllen  
-- Limonen  
-- Linalool
+Dominante Terpene: β-Caryophyllen, Limonen, Linalool
 
 ### Terpen-Radar (SVG)
 
-```svg
 <svg width="270" height="270" viewBox="0 0 100 100">
   <polygon fill="rgba(61,220,132,0.20)" stroke="#3ddc84"
-    points="
-      50,25  <!-- Myrcen niedrig -->
-      85,35  <!-- Limonen mittel -->
-      80,70  <!-- Caryophyllen hoch -->
-      50,85  <!-- Pinen mild -->
-      20,70  <!-- Linalool mittel-hoch -->
-      15,35  <!-- Humulen mild -->
-    " />
+    points="50,25 85,35 80,70 50,85 20,70 15,35" />
 </svg>
-```
 
 ---
 
 ## Wirkung (subjektiv)
 
-- sehr stark und körperlich  
+- sehr stark  
 - tief entspannend  
-- warmes, schweres Körpergefühl  
-- oft sedierend bei hoher Dosis  
-- „Dessert-Strain“ zum Runterfahren
+- warmes Körpergefühl  
+- sedierend bei hoher Dosis
 
 ---
 
 ## Mögliche Anwendungen (nicht-medizinisch)
 
-- Abend / Nacht  
+- Abend/Nacht  
 - Tiefenentspannung  
-- Abschalten nach Stress  
-- gemütliche Sessions  
-- nicht für produktive Aufgaben geeignet
+- Runterfahren  
+- Stressabbau
 
 ---
 
 ## Grow-Notizen
 
-- extrem dichte Buds → hohe Schimmelgefahr bei zu hoher rLF  
-- starke Terpenproduktion → Abluft wichtig  
-- reagiert gut auf Topping + LST  
-- moderater bis geringer Stretch  
-- EC in Vegi nicht übertreiben  
-- Blütezeit meist 8–10 Wochen (je nach Cut)
+- sehr dichte Buds → Schimmelgefahr  
+- starke Terpenproduktion  
+- reagiert gut auf Topping & LST  
+- mittlerer Stretch  
+- EC nicht zu hoch
 
 ---
 
 ## Fazit
 
-Wedding Cake ist ein kraftvoller Indica-Hybrid mit cremig-würzigem
-Aroma, massiven Buds und starker körperlicher Wirkung. Perfekt für
-Grower, die dichte, harzige Blüten und tiefe Entspannung suchen.
+Ein moderner Indica-Brecher mit cremig-würzigem Profil und massiver Wirkung. Ideal für starke Abendstrains.
