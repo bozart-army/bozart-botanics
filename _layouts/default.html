@@ -1,4 +1,39 @@
----
-layout: single
----
-{{ content }}
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">
+        <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      </h1>
+      <nav class="site-nav">
+        <a href="{{ '/'        | relative_url }}">Home</a>
+        <a href="{{ '/grow/'   | relative_url }}">Grow Guides</a>
+        <a href="{{ '/dwc/'    | relative_url }}">DWC</a>
+        <a href="{{ '/terpene/'| relative_url }}">Terpene</a>
+        <a href="{{ '/strains/'| relative_url }}">Strains</a>
+        <a href="{{ '/blog/'   | relative_url }}">Blog</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <div class="container">
+      {{ content }}
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© {{ site.time | date: "%Y" }} {{ site.title }}</p>
+    </div>
+  </footer>
+</body>
+</html>
