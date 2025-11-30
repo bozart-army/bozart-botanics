@@ -19,7 +19,7 @@ Kombinationen und typische medizinische Eigenschaften.
 - erdig, moschusartig, leicht süß  
 - mögliche Wirkung: entspannend, körperlastig  
 - oft dominant in Indica-Hybriden  
-[Mehr →](/terpene/myrcen/)
+[Mehr →]({{ site.baseurl }}/terpene/myrcen/)
 
 ---
 
@@ -27,7 +27,7 @@ Kombinationen und typische medizinische Eigenschaften.
 - zitronig, frisch, fruchtig  
 - mögliche Wirkung: aufhellend, stimmungsanhebend  
 - typisch in modernen US-Hybriden  
-[Mehr →](/terpene/limonen/)
+[Mehr →]({{ site.baseurl }}/terpene/limonen/)
 
 ---
 
@@ -35,29 +35,28 @@ Kombinationen und typische medizinische Eigenschaften.
 - würzig, pfeffrig, holzig  
 - einziges Terpen, das direkt CB2-Rezeptoren anspricht  
 - mögliche Wirkung: balancierend, entspannend  
-[Mehr →](/terpene/caryophyllen/)
+[Mehr →]({{ site.baseurl }}/terpene/caryophyllen/)
 
 ---
 
 ### Pinen
 - kiefernartig, frisch  
-- mögliche Wirkung: klar, aufmerksam, anti-müdigkeit  
-- kommt häufig in Sativa-Hybriden vor  
-[Mehr →](/terpene/pinen/)
+- mögliche Wirkung: klar, aufmerksam  
+[Mehr →]({{ site.baseurl }}/terpene/pinen/)
 
 ---
 
 ### Linalool
 - lavendelartig, floral  
-- mögliche Wirkung: beruhigend, ausgleichend  
-[Mehr →](/terpene/linalool/)
+- mögliche Wirkung: beruhigend  
+[Mehr →]({{ site.baseurl }}/terpene/linalool/)
 
 ---
 
 ### Humulen
 - holzig, hopfenartig  
 - mögliche Wirkung: balancierend  
-[Mehr →](/terpene/humulen/)
+[Mehr →]({{ site.baseurl }}/terpene/humulen/)
 
 ---
 
@@ -65,7 +64,7 @@ Kombinationen und typische medizinische Eigenschaften.
 - kräuterig, leicht blumig  
 - mögliche Wirkung: aktivierend  
 - typisch in Hazes  
-[Mehr →](/terpene/terpinolen/)
+[Mehr →]({{ site.baseurl }}/terpene/terpinolen/)
 
 ---
 
@@ -73,7 +72,7 @@ Kombinationen und typische medizinische Eigenschaften.
 
 Hier findest du das komplette dokumentierte PDF:
 
-👉 [Terpen-Lexikon als PDF herunterladen](/assets/terpene_lexikon.pdf)
+👉 [Terpen-Lexikon als PDF herunterladen]({{ site.baseurl }}/assets/terpene_lexikon.pdf)
 
 ---
 
