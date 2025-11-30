@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bozart-army.github.io/bozart-botanics/sitemap.xml
