@@ -6,9 +6,7 @@ sidebar: strains
 
 # OG Kush – Strain-Profil
 
-OG Kush ist einer der bekanntesten Hybride überhaupt – würzig, zitronig,
-erdig, stark. Die Sorte ist genetischer Ursprung vieler moderner Hybride
-und seit Jahrzehnten ein Klassiker.
+OG Kush ist einer der bekanntesten Hybride überhaupt – würzig, zitronig, erdig, stark. Die Sorte ist genetischer Ursprung vieler moderner Hybride und seit Jahrzehnten ein Klassiker.
 
 ---
 
@@ -29,7 +27,7 @@ Dominante Terpene: Limonen, Myrcen, β-Caryophyllen
 ### Terpen-Radar (SVG)
 
 <svg width="270" height="270" viewBox="0 0 100 100">
-  <polygon fill="rgba(61,220,132,0.20)" stroke="#3ddc84" 
+  <polygon fill="rgba(61,220,132,0.20)" stroke="#3ddc84"
     points="50,20 85,30 80,70 50,85 20,70 15,30" />
 </svg>
 
@@ -65,5 +63,4 @@ Dominante Terpene: Limonen, Myrcen, β-Caryophyllen
 
 ## Fazit
 
-Ein legendärer Hybrid mit schwerem OG-Profil, ideal für Fans von
-klassischen, kraftvollen Sorten.
+Ein legendärer Hybrid mit schwerem OG-Profil, ideal für Fans von klassischen, kraftvollen Sorten.
