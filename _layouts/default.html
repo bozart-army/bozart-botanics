@@ -7,7 +7,7 @@
 
   <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
 
-  <!-- Favicon & Theme-Farbe (falls Dateien noch fehlen, ist das nicht schlimm) -->
+  <!-- Favicon & Theme-Farbe (wenn Dateien noch fehlen, ist das nicht schlimm) -->
   <link rel="icon" type="image/png" href="{{ '/assets/bozart-botanics-icon.png' | relative_url }}">
   <meta name="theme-color" content="#070b09">
   <meta property="og:image" content="{{ '/assets/bozart-botanics-preview.png' | relative_url }}">
@@ -20,6 +20,11 @@
       <h1 class="site-title">
         <a href="{{ '/' | relative_url }}">BOZART BOTANICS</a>
       </h1>
+
+      <button class="menu-toggle" aria-label="Navigation öffnen oder schließen">
+        <span>☰ Menü</span>
+      </button>
+
       <nav class="site-nav">
         <a href="{{ '/'         | relative_url }}">🏠 Home</a>
         <a href="{{ '/grow/'    | relative_url }}">🌱 Grow Guides</a>
@@ -69,9 +74,10 @@
         {% elsif page.sidebar == "dwc" %}
           <h2 class="sidebar-title">DWC Tools</h2>
           <ul class="sidebar-list">
-            <li><a href="{{ '/dwc/ec-rechner/' | relative_url }}">EC-Rechner</a></li>
-            <li>pH-Grundlagen (coming soon)</li>
-            <li>Nährstoffpläne (coming soon)</li>
+            <li><a href="{{ '/dwc/ec-rechner/'      | relative_url }}">EC-Rechner</a></li>
+            <li><a href="{{ '/dwc/ph-tool/'         | relative_url }}">pH-Grundlagen & Rechner</a></li>
+            <li><a href="{{ '/dwc/naehrstoffplan/'  | relative_url }}">Nährstoffplan-Template</a></li>
+            <li><a href="{{ '/dwc/o2-tool/'         | relative_url }}">O₂ im Wasser</a></li>
           </ul>
 
         {% elsif page.sidebar == "grow" %}
@@ -120,5 +126,17 @@
       <p>© {{ site.time | date: "%Y" }} {{ site.title }}</p>
     </div>
   </footer>
+
+  <script>
+    (function() {
+      var btn = document.querySelector('.menu-toggle');
+      var nav = document.querySelector('.site-nav');
+      if (!btn || !nav) return;
+
+      btn.addEventListener('click', function() {
+        document.body.classList.toggle('nav-open');
+      });
+    })();
+  </script>
 </body>
 </html>
