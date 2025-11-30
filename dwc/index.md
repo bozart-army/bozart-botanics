@@ -28,6 +28,7 @@ konstant.
 
 ## Tools
 
+- [DWC Wasserparameter Dashboard](/bozart-botanics/dwc/dashboard/)
 - [EC-Rechner für Nährstofflösung](/bozart-botanics/dwc/ec-rechner/)
 - [pH-Grundlagen & Rechner](/bozart-botanics/dwc/ph-tool/)
 - [Nährstoffplan-Template](/bozart-botanics/dwc/naehrstoffplan/)
