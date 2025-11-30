@@ -1,18 +1,43 @@
 <div class="sidebar sidebar-right">
 
-  <h3 class="sidebar-title">Quick Tools</h3>
-  <ul class="sidebar-list">
-    <li><a href="{{ "/dwc/wasserparameter/" | relative_url }}">Wasserparameter Dashboard</a></li>
-    <li><a href="{{ "/grow/vpd/" | relative_url }}">VPD Rechner</a></li>
-    <li><a href="{{ "/grow/dli/" | relative_url }}">DLI Rechner</a></li>
-    <li><a href="{{ "/grow/ec-ph/" | relative_url }}">EC & pH Guide</a></li>
-    <li><a href="{{ "/grow/light-ppfd/" | relative_url }}">PPFD Chart</a></li>
-  </ul>
+  <!-- QUICK LINKS / TOOLS -->
+  <div class="sidebar-section">
+    <div class="sidebar-title">Quick Links</div>
+    <ul class="sidebar-list">
+      <li><a href="{{ '/dwc/dashboard/' | relative_url }}">DWC-Wasserparameter</a></li>
+      <li><a href="{{ '/dli-tool/' | relative_url }}">VPD-Rechner</a></li>
+      <li><a href="{{ '/dli/' | relative_url }}">DLI-Rechner</a></li>
+      <li><a href="{{ '/terpene/' | relative_url }}">Terpen-Übersicht</a></li>
+      <li><a href="{{ '/strains/' | relative_url }}">Strain-Übersicht</a></li>
+    </ul>
+  </div>
 
-  <h3 class="sidebar-title">Über Bozart Botanics</h3>
-  <p>
-    Wissenschaftlicher Cannabis-Grow, Terpene, Strains und komplette
-    Indoor-Guides. Für Grower, die alles perfekt verstehen wollen.
-  </p>
+  <!-- GROW SIMULATOR SECTION (optional später) -->
+  <div class="sidebar-section">
+    <div class="sidebar-title">Bestseller-Tools</div>
+    <ul class="sidebar-list">
+      <li><a href="{{ '/ec-ph/' | relative_url }}">EC/pH – Grundlagen</a></li>
+      <li><a href="{{ '/erntezeitpunkt/' | relative_url }}">Erntezeitpunkt</a></li>
+      <li><a href="{{ '/pest-pathogen/' | relative_url }}">Schädlinge & Krankheiten</a></li>
+    </ul>
+  </div>
+
+  <!-- TERPENE PDF & DOWNLOADS -->
+  <div class="sidebar-section">
+    <div class="sidebar-title">Downloads</div>
+    <ul class="sidebar-list">
+      <li><a href="{{ '/terpene_lexikon.pdf' | relative_url }}" target="_blank">Terpen-Lexikon (PDF)</a></li>
+      <li><a href="{{ '/naehrstoffplan-template/' | relative_url }}">Nährstoffplan (Template)</a></li>
+    </ul>
+  </div>
+
+  <!-- ABOUT -->
+  <div class="sidebar-section">
+    <div class="sidebar-title">Über das Projekt</div>
+    <ul class="sidebar-list">
+      <li><a href="{{ '/blog/' | relative_url }}">Blog & Artikel</a></li>
+      <li><a href="{{ '/contact/' | relative_url }}">Kontakt</a></li>
+    </ul>
+  </div>
 
 </div>
