@@ -1,22 +1,89 @@
-<div class="sidebar">
+<div class="sidebar sidebar-left">
 
-  <!-- GROW METHODEN -->
+  {% assign current = page.url | default: '/' %}
+
+  <!-- GROW-METHODEN -->
   <div class="sidebar-section">
     <div class="sidebar-title">Grow-Methoden</div>
     <ul class="sidebar-list">
-      <li><a href="{{ '/grow/methoden/erde/' | relative_url }}">Erde (Soil)</a></li>
-      <li><a href="{{ '/grow/methoden/bio-erde/' | relative_url }}">Bio-Erde (Organisch)</a></li>
-      <li><a href="{{ '/grow/methoden/living-soil/' | relative_url }}">Living Soil</a></li>
-      <li><a href="{{ '/grow/methoden/coco/' | relative_url }}">Coco</a></li>
-      <li><a href="{{ '/grow/methoden/steinwolle/' | relative_url }}">Steinwolle (Rockwool)</a></li>
-      <li><a href="{{ '/grow/methoden/hydro/' | relative_url }}">Hydroponik (Allgemein)</a></li>
-      <li><a href="{{ '/grow/methoden/ebbe-und-flut/' | relative_url }}">Ebbe & Flut (Flood & Drain)</a></li>
-      <li><a href="{{ '/grow/methoden/dwc/' | relative_url }}">DWC – Deep Water Culture</a></li>
-      <li><a href="{{ '/grow/methoden/rdwc/' | relative_url }}">RDWC – Recirculating DWC</a></li>
-      <li><a href="{{ '/grow/methoden/aeroponik/' | relative_url }}">Aeroponik (LPA & HPA)</a></li>
-      <li><a href="{{ '/grow/methoden/nft/' | relative_url }}">NFT – Nutrient Film Technique</a></li>
-      <li><a href="{{ '/grow/methoden/autopot/' | relative_url }}">AutoPot (FlexiPot & Hydro)</a></li>
-      <li><a href="{{ '/grow/methoden/tropf/' | relative_url }}">Tropfbewässerung (DTW & Recirc)</a></li>
+      <li>
+        <a href="{{ '/grow/methoden/erde/' | relative_url }}"
+           class="{% if current contains '/grow/methoden/erde/' %}sidebar-link-active{% endif %}">
+          Erde (Soil)
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/grow/methoden/bio-erde/' | relative_url }}"
+           class="{% if current contains '/grow/methoden/bio-erde/' %}sidebar-link-active{% endif %}">
+          Bio-Erde (Organisch)
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/grow/methoden/living-soil/' | relative_url }}"
+           class="{% if current contains '/grow/methoden/living-soil/' %}sidebar-link-active{% endif %}">
+          Living Soil
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/grow/methoden/coco/' | relative_url }}"
+           class="{% if current contains '/grow/methoden/coco/' %}sidebar-link-active{% endif %}">
+          Coco
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/grow/methoden/steinwolle/' | relative_url }}"
+           class="{% if current contains '/grow/methoden/steinwolle/' %}sidebar-link-active{% endif %}">
+          Steinwolle (Rockwool)
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/grow/methoden/hydro/' | relative_url }}"
+           class="{% if current contains '/grow/methoden/hydro/' %}sidebar-link-active{% endif %}">
+          Hydroponik (Allgemein)
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/grow/methoden/ebbe-und-flut/' | relative_url }}"
+           class="{% if current contains '/grow/methoden/ebbe-und-flut/' %}sidebar-link-active{% endif %}">
+          Ebbe &amp; Flut (Flood &amp; Drain)
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/grow/methoden/tropf/' | relative_url }}"
+           class="{% if current contains '/grow/methoden/tropf/' %}sidebar-link-active{% endif %}">
+          Tropfbewässerung (DTW)
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/grow/methoden/dwc/' | relative_url }}"
+           class="{% if current contains '/grow/methoden/dwc/' %}sidebar-link-active{% endif %}">
+          DWC (Deep Water Culture)
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/grow/methoden/rdwc/' | relative_url }}"
+           class="{% if current contains '/grow/methoden/rdwc/' %}sidebar-link-active{% endif %}">
+          RDWC (Recirculating DWC)
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/grow/methoden/aeroponik/' | relative_url }}"
+           class="{% if current contains '/grow/methoden/aeroponik/' %}sidebar-link-active{% endif %}">
+          Aeroponik (LPA &amp; HPA)
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/grow/methoden/nft/' | relative_url }}"
+           class="{% if current contains '/grow/methoden/nft/' %}sidebar-link-active{% endif %}">
+          NFT (Nutrient Film Technique)
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/grow/methoden/autopot/' | relative_url }}"
+           class="{% if current contains '/grow/methoden/autopot/' %}sidebar-link-active{% endif %}">
+          AutoPot (FlexiPot &amp; Hydro)
+        </a>
+      </li>
     </ul>
   </div>
 
@@ -24,10 +91,30 @@
   <div class="sidebar-section">
     <div class="sidebar-title">Düngestrategien</div>
     <ul class="sidebar-list">
-      <li><a href="{{ '/grow/duenger/mineralisch/' | relative_url }}">Mineralisch</a></li>
-      <li><a href="{{ '/grow/duenger/organisch/' | relative_url }}">Organisch</a></li>
-      <li><a href="{{ '/grow/duenger/hybrid/' | relative_url }}">Hybrid-Systeme</a></li>
-      <li><a href="{{ '/grow/duenger/spezialsysteme/' | relative_url }}">Spezialsysteme (Bio/Min Mix)</a></li>
+      <li>
+        <a href="{{ '/duenger/mineralisch/' | relative_url }}"
+           class="{% if current contains '/duenger/mineralisch/' %}sidebar-link-active{% endif %}">
+          Mineralische Düngung
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/duenger/organisch/' | relative_url }}"
+           class="{% if current contains '/duenger/organisch/' %}sidebar-link-active{% endif %}">
+          Organisch (Bio)
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/duenger/hybrid/' | relative_url }}"
+           class="{% if current contains '/duenger/hybrid/' %}sidebar-link-active{% endif %}">
+          Hybrid-Systeme
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/duenger/organisch-mineral/' | relative_url }}"
+           class="{% if current contains '/duenger/organisch-mineral/' %}sidebar-link-active{% endif %}">
+          Organisch-Mineral Spezial
+        </a>
+      </li>
     </ul>
   </div>
 
@@ -35,10 +122,15 @@
   <div class="sidebar-section">
     <div class="sidebar-title">Terpene</div>
     <ul class="sidebar-list">
-      <li><a href="{{ '/terpene/' | relative_url }}">Terpen-Übersicht</a></li>
+      <li>
+        <a href="{{ '/terpene/' | relative_url }}"
+           class="{% if current == '/terpene/' %}sidebar-link-active{% endif %}">
+          Terpen-Übersicht
+        </a>
+      </li>
       <li><a href="{{ '/terpene/myrcen/' | relative_url }}">Myrcen</a></li>
       <li><a href="{{ '/terpene/limonen/' | relative_url }}">Limonen</a></li>
-      <li><a href="{{ '/terpene/b-caryophyllen/' | relative_url }}">β-Caryophyllen</a></li>
+      <li><a href="{{ '/terpene/caryophyllen/' | relative_url }}">β-Caryophyllen</a></li>
       <li><a href="{{ '/terpene/pinen/' | relative_url }}">Pinen</a></li>
       <li><a href="{{ '/terpene/linalool/' | relative_url }}">Linalool</a></li>
       <li><a href="{{ '/terpene/humulen/' | relative_url }}">Humulen</a></li>
@@ -51,6 +143,7 @@
   <div class="sidebar-section">
     <div class="sidebar-title">Strains</div>
     <ul class="sidebar-list">
+      <li><a href="{{ '/strains/' | relative_url }}">Alle Strains</a></li>
       <li><a href="{{ '/strains/og-kush/' | relative_url }}">OG Kush</a></li>
       <li><a href="{{ '/strains/gelato/' | relative_url }}">Gelato</a></li>
       <li><a href="{{ '/strains/amnesia-haze/' | relative_url }}">Amnesia Haze</a></li>
@@ -63,13 +156,36 @@
   <div class="sidebar-section">
     <div class="sidebar-title">Grow-Wissen</div>
     <ul class="sidebar-list">
-      <li><a href="{{ '/grow/vpd/' | relative_url }}">VPD – Luftfeuchte & Temperatur</a></li>
-      <li><a href="{{ '/grow/licht-und-dli/' | relative_url }}">Licht, PPFD & DLI</a></li>
-      <li><a href="{{ '/grow/klima/' | relative_url }}">Klimasteuerung (CO₂ & RLF)</a></li>
-      <li><a href="{{ '/grow/training/' | relative_url }}">Training (LST/HST/Mainlining)</a></li>
-      <li><a href="{{ '/grow/erntezeitpunkt/' | relative_url }}">Ernte & Trichome</a></li>
-      <li><a href="{{ '/grow/wasserchemie/' | relative_url }}">Wasserchemie Deep Guide</a></li>
-      <li><a href="{{ '/grow/pest-pathogen/' | relative_url }}">Pest & Pathogen Guide</a></li>
+      <li>
+        <a href="{{ '/grow/overview/' | relative_url }}"
+           class="{% if current contains '/grow/overview' %}sidebar-link-active{% endif %}">
+          Grow-Übersicht
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/grow/klima-vpd/' | relative_url }}"
+           class="{% if current contains '/grow/klima-vpd/' %}sidebar-link-active{% endif %}">
+          Klima &amp; VPD
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/grow/licht-ppfd/' | relative_url }}"
+           class="{% if current contains '/grow/licht-ppfd/' %}sidebar-link-active{% endif %}">
+          Licht &amp; PPFD
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/wasserchemie/' | relative_url }}"
+           class="{% if current contains '/wasserchemie/' %}sidebar-link-active{% endif %}">
+          Wasserchemie
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/pest-pathogen/' | relative_url }}"
+           class="{% if current contains '/pest-pathogen/' %}sidebar-link-active{% endif %}">
+          IPM &amp; Schädlinge
+        </a>
+      </li>
     </ul>
   </div>
 
