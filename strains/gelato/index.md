@@ -6,79 +6,62 @@ sidebar: strains
 
 # Gelato – Strain-Profil
 
-Gelato ist ein fruchtig-würziger Hybrid mit cremiger Note, dichter
-Struktur und starker, aber klarer Wirkung. Eine der beliebtesten Sorten
-der modernen Generation.
+Gelato ist ein fruchtig-würziger Hybrid mit cremig-süßem Aroma und einer
+klaren, gleichzeitig entspannenden Wirkung. Eine moderne Topsorte.
 
 ---
 
 ## Genetik & Grunddaten
 
-- Züchter: Cookies Fam / Sherbinskis  
 - Typ: Hybrid  
 - Kreuzung: Sunset Sherbet × Thin Mint GSC  
 - THC: mittel–hoch  
-- CBD: sehr niedrig  
-- Besonderheiten: cremiges Terpenprofil, starke Farben, dichte Buds
+- CBD: niedrig  
+- Besonderheiten: cremiges Aroma, starke Farben, dichte Buds
 
 ---
 
 ## Terpenprofil (visuelle Darstellung)
 
-Dominante Terpene:
-
-- β-Caryophyllen  
-- Limonen  
-- Humulen
+Dominante Terpene: β-Caryophyllen, Limonen, Humulen
 
 ### Terpen-Radar (SVG)
 
-```svg
 <svg width="270" height="270" viewBox="0 0 100 100">
-  <polygon fill="rgba(61,220,132,0.20)" stroke="#3ddc84"
-    points="
-      50,25  <!-- Myrcen mittel -->
-      80,35  <!-- Limonen hoch -->
-      85,70  <!-- Caryophyllen hoch -->
-      50,85  <!-- Pinen niedrig -->
-      25,70  <!-- Linalool mittel -->
-      20,35  <!-- Humulen mittel -->
-    " />
+  <polygon fill="rgba(61,220,132,0.20)" stroke="#3ddc84" 
+    points="50,25 80,35 85,70 50,85 25,70 20,35" />
 </svg>
-```
 
 ---
 
 ## Wirkung (subjektiv)
 
-- euphorisch und klar  
-- entspannend ohne starke Sedierung  
+- euphorisch  
+- klar und fokussiert  
 - warmes Körpergefühl  
-- sozial und „freundlich“ im Kopf
+- sozialer Hybrid
 
 ---
 
 ## Mögliche Anwendungen (nicht-medizinisch)
 
 - kreative Aufgaben  
-- entspannte soziale Runden  
-- Alltag am Nachmittag/Abend  
-- leichte bis mittlere Entspannung
+- soziale Momente  
+- entspannte Sessions  
+- Alltag
 
 ---
 
 ## Grow-Notizen
 
 - mittelstarker Stretch  
-- gutes Training empfohlen (LST, Topping)  
-- reagiert empfindlich auf zu hohe EC-Werte  
-- sehr dichte Buds → Luftfeuchte in später Blüte kontrollieren  
-- Aroma extrem stark, gute Abluft wichtig
+- dichte Buds → rLF kontrollieren  
+- mag stabile EC-Werte  
+- reagiert gut auf Training
 
 ---
 
 ## Fazit
 
-Gelato kombiniert cremige Süße mit würzigen Unternoten und liefert ein
-gleichzeitig entspannendes und klares High. Ein moderner Hybrid, der
-aromatisch und wachstumsstark ist.
+Gelato liefert ein cremig-fruchtiges Aroma und eine moderne, angenehme
+Wirkung – ideal für hochwertige Indoor-Grows.
