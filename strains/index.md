@@ -1,26 +1,26 @@
 ---
 layout: default
-title: Strain Profile
+title: Strain-Profile
 sidebar: strains
 ---
 
+# Strain-Profile
 
-# Strain Profile
+In diesem Bereich sammelt Bozart Botanics Strain-Profile mit Fokus auf:
 
-Hier findest du wissenschaftlich fundierte und praxisnahe Sortenprofile:
+- Terpen- und Cannabinoidprofil
+- subjektive Wirkung und mögliche Anwendungen
+- Grow-Notizen (z. B. Verhalten in DWC/Coco)
+- Seed-to-Harvest-Beobachtungen
 
-- Terpenprofil
-- Cannabinoid-Analyse
-- Geschmack & Aroma
-- Wirkung (medizinsch & psychoaktiv)
-- Grow-Informationen
-- Seed-to-Harvest Bewertung
-- PDF-Protokolle für den Eigenanbau
+Die Profile sind keine medizinische Empfehlung, sondern eine Mischung aus
+Labordaten (wo verfügbar) und Grow-Erfahrung.
 
-Demnächst folgen unter anderem:
+---
 
-- Blackberry Nuggets (BSB Genetics)
-- Runtz-Linien
-- Kush-Varianten
-- Fruchtige Sativas
-- Medizinisch relevante CBD-Profile
+## Verfügbare Strains
+
+- [Blackberry Nuggets (BSB Genetics)](/bozart-botanics/strains/blackberry-nuggets/)
+
+Weitere Sorten folgen nach und nach, sobald Seed-to-Harvest-Daten
+vorliegen.
