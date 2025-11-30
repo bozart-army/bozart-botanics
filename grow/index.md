@@ -1,7 +1,9 @@
 ---
 layout: default
 title: Grow Guides
+sidebar: grow
 ---
+
 
 # Grow Guides
 
