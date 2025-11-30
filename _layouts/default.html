@@ -1,143 +1,84 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <title>{{ page.title }} | {{ site.title }}</title>
+  <meta charset="utf-8">
+  <title>
+    {% if page.title %}{{ page.title }} | {% endif %}
+    {{ site.title | default: "Bozart Botanics" }}
+  </title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
-
-  <!-- Favicon & Theme-Farbe (wenn Dateien noch fehlen, ist das nicht schlimm) -->
-  <link rel="icon" type="image/png" href="{{ '/assets/bozart-botanics-icon.png' | relative_url }}">
-  <meta name="theme-color" content="#070b09">
-  <meta property="og:image" content="{{ '/assets/bozart-botanics-preview.png' | relative_url }}">
-
-  {%- seo -%}
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-bar">
-      <h1 class="site-title">
-        <a href="{{ '/' | relative_url }}">BOZART BOTANICS</a>
-      </h1>
+  <div class="page-wrapper">
+    <!-- Linke Sidebar: Brand + Navigation -->
+    <aside class="sidebar-left">
+      <div class="brand">
+        <div class="brand-logo">BB</div>
+        <div class="brand-text">
+          <div class="brand-title">Bozart Botanics</div>
+          <div class="brand-subtitle">Grow · Terpene · Strains</div>
+        </div>
+      </div>
 
-      <button class="menu-toggle" aria-label="Navigation öffnen oder schließen">
-        <span>☰ Menü</span>
-      </button>
+      {% assign current = page.url %}
 
-      <nav class="site-nav">
-        <a href="{{ '/'         | relative_url }}">🏠 Home</a>
-        <a href="{{ '/grow/'    | relative_url }}">🌱 Grow Guides</a>
-        <a href="{{ '/dwc/'     | relative_url }}">💧 DWC</a>
-        <a href="{{ '/terpene/' | relative_url }}">🔬 Terpene</a>
-        <a href="{{ '/strains/' | relative_url }}">🌿 Strains</a>
-        <a href="{{ '/blog/'    | relative_url }}">📰 Blog</a>
+      <nav class="main-nav">
+        <a href="{{ site.baseurl }}/"
+           class="nav-link{% if current == '/' %} active{% endif %}">
+          Home
+        </a>
+
+        <a href="{{ site.baseurl }}/terpene/"
+           class="nav-link{% if current contains '/terpene/' %} active{% endif %}">
+          Terpen-Lexikon
+        </a>
+
+        <a href="{{ site.baseurl }}/strains/"
+           class="nav-link{% if current contains '/strains/' %} active{% endif %}">
+          Strain-Profile
+        </a>
+
+        <a href="{{ site.baseurl }}/grow/"
+           class="nav-link{% if current contains '/grow/' %} active{% endif %}">
+          Grow-Tools
+        </a>
+
+        <a href="{{ site.baseurl }}/blog/"
+           class="nav-link{% if current contains '/blog/' or current contains '/posts/' %} active{% endif %}">
+          Blog
+        </a>
       </nav>
-    </div>
-  </header>
+    </aside>
 
-  <main class="site-main">
-    <div class="container layout-grid">
-
-      <!-- LINKER SIDEBAR: Navigation -->
-      <aside class="sidebar sidebar-left">
-        <h2 class="sidebar-title">Navigation</h2>
-        <ul class="sidebar-list">
-          <li><a href="{{ '/'         | relative_url }}">Startseite</a></li>
-          <li><a href="{{ '/blog/'    | relative_url }}">Blog – alle Artikel</a></li>
-          <li><a href="{{ '/terpene/' | relative_url }}">Terpen-Lexikon</a></li>
-          <li><a href="{{ '/grow/'    | relative_url }}">Grow Guides</a></li>
-          <li><a href="{{ '/dwc/'     | relative_url }}">DWC & Hydroponik</a></li>
-          <li><a href="{{ '/strains/' | relative_url }}">Strain-Profile</a></li>
-        </ul>
-      </aside>
-
-      <!-- MITTLERER INHALT -->
-      <article class="content-main">
+    <!-- Hauptinhalt -->
+    <main class="content">
+      <div class="page-content">
         {{ content }}
-      </article>
+      </div>
+    </main>
 
-      <!-- RECHTER SIDEBAR: dynamisch nach page.sidebar -->
-      <aside class="sidebar sidebar-right">
-        {% if page.sidebar == "terpene" %}
-          <h2 class="sidebar-title">Terpene</h2>
-          <ul class="sidebar-list">
-            <li><a href="{{ '/terpene/' | relative_url }}">Terpen-Übersicht</a></li>
-            <li><a href="{{ '/assets/terpene_lexikon.pdf' | relative_url }}">Terpen-Lexikon (PDF)</a></li>
-          </ul>
-          <h3 class="sidebar-subtitle">Nächste Inhalte</h3>
-          <ul class="sidebar-list">
-            <li>Einfluss der Terpene auf Wirkung</li>
-            <li>Terpen-Profile nach Sorten</li>
-          </ul>
+    <!-- Rechte Sidebar: Quick-Links & Info -->
+    <aside class="sidebar-right">
+      <div class="sidebar-box">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="{{ site.baseurl }}/grow/dwc-dashboard/">DWC-Wasserparameter</a></li>
+          <li><a href="{{ site.baseurl }}/grow/vpd-tool/">VPD-Rechner</a></li>
+          <li><a href="{{ site.baseurl }}/grow/dli-tool/">DLI-Rechner</a></li>
+          <li><a href="{{ site.baseurl }}/terpene/">Terpen-Lexikon</a></li>
+          <li><a href="{{ site.baseurl }}/strains/">Strain-Übersicht</a></li>
+        </ul>
+      </div>
 
-        {% elsif page.sidebar == "dwc" %}
-          <h2 class="sidebar-title">DWC Tools</h2>
-          <ul class="sidebar-list">
-            <li><a href="{{ '/dwc/dashboard/'    | relative_url }}">DWC Dashboard</a></li>
-            <li><a href="{{ '/dwc/ec-rechner/'   | relative_url }}">EC-Rechner</a></li>
-            <li><a href="{{ '/dwc/ph-tool/'      | relative_url }}">pH-Grundlagen & Rechner</a></li>
-            <li><a href="{{ '/dwc/naehrstoffplan/' | relative_url }}">Nährstoffplan-Template</a></li>
-            <li><a href="{{ '/dwc/o2-tool/'      | relative_url }}">O₂ im Wasser</a></li>
-          </ul>
-
-        {% elsif page.sidebar == "grow" %}
-          <h2 class="sidebar-title">Grow Basics</h2>
-          <ul class="sidebar-list">
-            <li>Klima & VPD (coming soon)</li>
-            <li>Licht & Abstand (coming soon)</li>
-            <li>Training & Mainlining (coming soon)</li>
-          </ul>
-
-        {% elsif page.sidebar == "strains" %}
-          <h2 class="sidebar-title">Strain-Fokus</h2>
-          <ul class="sidebar-list">
-            <li>Blackberry Nuggets (coming soon)</li>
-            <li>Sortenvergleich Indica/Sativa (coming soon)</li>
-          </ul>
-
-        {% elsif page.sidebar == "blog" %}
-          <h2 class="sidebar-title">Blog-Info</h2>
-          <ul class="sidebar-list">
-            <li><a href="{{ '/blog/' | relative_url }}">Neueste Artikel</a></li>
-            <li>FAQ & Kontakt (coming soon)</li>
-          </ul>
-
-        {% else %}
-          <!-- Default Sidebar -->
-          <h2 class="sidebar-title">Quick Info</h2>
-          <ul class="sidebar-list">
-            <li><a href="{{ '/assets/terpene_lexikon.pdf' | relative_url }}">Terpen-Lexikon (PDF)</a></li>
-            <li><a href="{{ '/terpene/' | relative_url }}">Wirkungen der Terpene</a></li>
-          </ul>
-          <h3 class="sidebar-subtitle">Demnächst</h3>
-          <ul class="sidebar-list">
-            <li>Seed-to-Harvest DWC-Serie</li>
-            <li>Blackberry Nuggets Strain-Report</li>
-            <li>CO₂-Optimierungs-Guide</li>
-          </ul>
-        {% endif %}
-      </aside>
-
-    </div>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>© {{ site.time | date: "%Y" }} {{ site.title }}</p>
-    </div>
-  </footer>
-
-  <script>
-    (function() {
-      var btn = document.querySelector('.menu-toggle');
-      var nav = document.querySelector('.site-nav');
-      if (!btn || !nav) return;
-
-      btn.addEventListener('click', function() {
-        document.body.classList.toggle('nav-open');
-      });
-    })();
-  </script>
+      <div class="sidebar-box">
+        <h3>Über Bozart Botanics</h3>
+        <p>
+          Unabhängiges Projekt rund um medizinischen Anbau,
+          Terpene, Strain-Profile und praktische Grow-Tools.
+        </p>
+      </div>
+    </aside>
+  </div>
 </body>
 </html>
