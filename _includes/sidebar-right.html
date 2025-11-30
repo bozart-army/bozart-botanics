@@ -1,42 +1,107 @@
-<div class="sidebar sidebar-right">
+<div class="sidebar sidebar-right sidebar-3">
 
-  <!-- QUICK LINKS / TOOLS -->
+  {% assign current = page.url | default: '/' %}
+
+  <!-- TOP: Schnellzugriff DWC / Tools -->
   <div class="sidebar-section">
-    <div class="sidebar-title">Quick Links</div>
-    <ul class="sidebar-list">
-      <li><a href="{{ '/dwc/dashboard/' | relative_url }}">DWC-Wasserparameter</a></li>
-      <li><a href="{{ '/dli-tool/' | relative_url }}">VPD-Rechner</a></li>
-      <li><a href="{{ '/dli/' | relative_url }}">DLI-Rechner</a></li>
-      <li><a href="{{ '/terpene/' | relative_url }}">Terpen-Übersicht</a></li>
-      <li><a href="{{ '/strains/' | relative_url }}">Strain-Übersicht</a></li>
+    <div class="sidebar-title">DWC & Tools</div>
+    <ul class="sidebar-list sidebar-list-pills">
+      <li>
+        <a href="{{ '/dwc/dashboard/' | relative_url }}"
+           class="sidebar-pill {% if current == '/dwc/dashboard/' %}active-pill{% endif %}">
+          <span class="pill-dot"></span>
+          <span class="pill-label">DWC Dashboard</span>
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/ec-ph/' | relative_url }}"
+           class="sidebar-pill {% if current == '/ec-ph/' %}active-pill{% endif %}">
+          <span class="pill-dot"></span>
+          <span class="pill-label">EC &amp; pH – Guide</span>
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/dli-tool/' | relative_url }}"
+           class="sidebar-pill {% if current == '/dli-tool/' %}active-pill{% endif %}">
+          <span class="pill-dot"></span>
+          <span class="pill-label">VPD Rechner</span>
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/dli/' | relative_url }}"
+           class="sidebar-pill {% if current == '/dli/' %}active-pill{% endif %}">
+          <span class="pill-dot"></span>
+          <span class="pill-label">DLI Rechner</span>
+        </a>
+      </li>
     </ul>
   </div>
 
-  <!-- GROW SIMULATOR SECTION (optional später) -->
+  <!-- TERPENE / STRAINS -->
   <div class="sidebar-section">
-    <div class="sidebar-title">Bestseller-Tools</div>
+    <div class="sidebar-title">Aromen & Genetik</div>
     <ul class="sidebar-list">
-      <li><a href="{{ '/ec-ph/' | relative_url }}">EC/pH – Grundlagen</a></li>
-      <li><a href="{{ '/erntezeitpunkt/' | relative_url }}">Erntezeitpunkt</a></li>
-      <li><a href="{{ '/pest-pathogen/' | relative_url }}">Schädlinge & Krankheiten</a></li>
+      <li>
+        <a href="{{ '/terpene/' | relative_url }}"
+           class="{% if current contains '/terpene' %}sidebar-link-active{% endif %}">
+          Terpen-Übersicht
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/strains/' | relative_url }}"
+           class="{% if current contains '/strains' %}sidebar-link-active{% endif %}">
+          Strain-Übersicht
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/terpene_lexikon.pdf' | relative_url }}" target="_blank">
+          Terpen-Lexikon (PDF)
+        </a>
+      </li>
     </ul>
   </div>
 
-  <!-- TERPENE PDF & DOWNLOADS -->
+  <!-- NÄHRSTOFFE & WASSER -->
   <div class="sidebar-section">
-    <div class="sidebar-title">Downloads</div>
+    <div class="sidebar-title">Nährstoffe & Wasser</div>
     <ul class="sidebar-list">
-      <li><a href="{{ '/terpene_lexikon.pdf' | relative_url }}" target="_blank">Terpen-Lexikon (PDF)</a></li>
-      <li><a href="{{ '/naehrstoffplan-template/' | relative_url }}">Nährstoffplan (Template)</a></li>
+      <li>
+        <a href="{{ '/duenger/mineralisch/' | relative_url }}"
+           class="{% if current contains '/duenger/mineralisch' %}sidebar-link-active{% endif %}">
+          Mineralische Düngung
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/wasserchemie/' | relative_url }}"
+           class="{% if current contains '/wasserchemie' %}sidebar-link-active{% endif %}">
+          Wasserchemie Guide
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/pest-pathogen/' | relative_url }}"
+           class="{% if current contains '/pest-pathogen' %}sidebar-link-active{% endif %}">
+          Schädlinge & Pathogene
+        </a>
+      </li>
     </ul>
   </div>
 
-  <!-- ABOUT -->
+  <!-- KNOWLEDGE / BLOG -->
   <div class="sidebar-section">
-    <div class="sidebar-title">Über das Projekt</div>
+    <div class="sidebar-title">Wissen & Updates</div>
     <ul class="sidebar-list">
-      <li><a href="{{ '/blog/' | relative_url }}">Blog & Artikel</a></li>
-      <li><a href="{{ '/contact/' | relative_url }}">Kontakt</a></li>
+      <li>
+        <a href="{{ '/grow/overview/' | relative_url }}"
+           class="{% if current contains '/grow/overview' %}sidebar-link-active{% endif %}">
+          Grow-Übersicht
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/blog/' | relative_url }}"
+           class="{% if current contains '/blog' %}sidebar-link-active{% endif %}">
+          Blog – alle Artikel
+        </a>
+      </li>
     </ul>
   </div>
 
