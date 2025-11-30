@@ -7,6 +7,11 @@
 
   <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
 
+  <!-- Favicon & Theme-Farbe (falls Dateien noch fehlen, ist das nicht schlimm) -->
+  <link rel="icon" type="image/png" href="{{ '/assets/bozart-botanics-icon.png' | relative_url }}">
+  <meta name="theme-color" content="#070b09">
+  <meta property="og:image" content="{{ '/assets/bozart-botanics-preview.png' | relative_url }}">
+
   {%- seo -%}
 </head>
 <body>
@@ -29,7 +34,7 @@
   <main class="site-main">
     <div class="container layout-grid">
 
-      <!-- LINKER SIDEBAR: immer Navigation -->
+      <!-- LINKER SIDEBAR: Navigation -->
       <aside class="sidebar sidebar-left">
         <h2 class="sidebar-title">Navigation</h2>
         <ul class="sidebar-list">
@@ -64,8 +69,8 @@
         {% elsif page.sidebar == "dwc" %}
           <h2 class="sidebar-title">DWC Tools</h2>
           <ul class="sidebar-list">
-            <li>EC/pH-Grundlagen (coming soon)</li>
-            <li>DWC Checkliste (coming soon)</li>
+            <li><a href="{{ '/dwc/ec-rechner/' | relative_url }}">EC-Rechner</a></li>
+            <li>pH-Grundlagen (coming soon)</li>
             <li>Nährstoffpläne (coming soon)</li>
           </ul>
 
