@@ -916,3 +916,47 @@ label {
     padding-top: 0.7rem;
   }
 }
+/* ============================
+   Terpen-Radar 2.0 (Mini-Profile)
+   ============================ */
+
+.terpen-radar-wrapper {
+  margin: 0.75rem 0 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  flex-wrap: wrap;
+}
+
+.terpen-radar {
+  width: 110px;
+  height: 110px;
+  display: block;
+  filter: drop-shadow(0 0 16px rgba(61, 220, 132, 0.35));
+}
+
+.terpen-radar-bg {
+  fill: rgba(14, 26, 40, 0.85);
+  stroke: rgba(88, 122, 160, 0.6);
+  stroke-width: 1;
+}
+
+.terpen-radar-fill {
+  fill: rgba(61, 220, 132, 0.22);
+  stroke: var(--accent);
+  stroke-width: 2;
+  stroke-linejoin: round;
+}
+
+.terpen-radar-center {
+  fill: rgba(3, 10, 18, 0.9);
+  stroke: rgba(61, 220, 132, 0.5);
+  stroke-width: 1;
+}
+
+.terpen-radar-caption {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  max-width: 260px;
+  line-height: 1.5;
+}
