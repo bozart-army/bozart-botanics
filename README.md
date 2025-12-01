@@ -87,26 +87,6 @@ Nährstoffplan-Vorlagen
 
 Alle Tools laufen ohne Login, ohne Tracking, vollständig clientseitig.
 
-🚀 Technologie-Stack
-Bereich	Technologie
-Hosting	GitHub Pages
-Engine	Jekyll
-Struktur	Modularer Content-Tree (Grow, DWC, Terpene, Strains, Tools)
-Styling	Botanics UI (Dark-Neon), Custom CSS 3.0
-Versionierung	Git / GitHub
-📂 Repository-Struktur (Auszug)
-bozart-botanics/
-│
-├── _layouts/        # Templates (default.html, post.html)
-├── _includes/       # Navigation, Sidebars, Components
-├── assets/          # Stylesheets, PDFs
-├── grow/            # Grow-Guides und Unterkategorien
-├── dwc/             # Deep Water Culture Guides
-├── terpene/         # Terpen-Lexikon
-├── strains/         # Strain-Profile
-├── blog/            # Artikel und Updates
-├── index.md         # Startseite
-└── README.md
 
 📈 Qualitätsgrundsätze
 
