@@ -13,161 +13,227 @@ Kombinationen und typische medizinische Eigenschaften.
 
 ---
 
-## Terpen-Quick-Übersicht
+## Mini-Terpen-Radar – Legende
 
-| Terpen           | Icon | Aroma (kurz)                 | Mögliche Wirkung (subjektiv)          | Detail |
-|------------------|:----:|-----------------------------|----------------------------------------|--------|
-| β-Caryophyllen   | 🌶️  | würzig, pfeffrig, holzig    | balancierend, entspannend             | [→]({{ site.baseurl }}/terpene/caryophyllen/) |
-| Humulen          | 🍺  | holzig, hopfenartig          | ausgleichend, „erdend“                | [→]({{ site.baseurl }}/terpene/humulen/) |
-| Limonen          | 🍋  | zitronig, frisch, fruchtig   | aufhellend, stimmungsanhebend         | [→]({{ site.baseurl }}/terpene/limonen/) |
-| Linalool         | 🌸  | lavendelartig, floral        | beruhigend, entspannend               | [→]({{ site.baseurl }}/terpene/linalool/) |
-| Myrcen           | 🌿  | erdig, moschusartig, süß     | körperlastig, sedierend („couch-lock“) | [→]({{ site.baseurl }}/terpene/myrcen/) |
-| Ocimen           | 🌱  | frisch, kräuterig, leicht süß| klar, hell, aktivierend               | [→]({{ site.baseurl }}/terpene/ocimen/) |
-| Pinen            | 🌲  | kiefernartig, harzig         | klar, fokussiert                      | [→]({{ site.baseurl }}/terpene/pinen/) |
-| Terpinolen       | ✨  | kräuterig, blumig, frisch    | aktivierend, „Haze-typisch“           | [→]({{ site.baseurl }}/terpene/terpinolen/) |
+Jedes Radar basiert auf **5 Achsen** (symbolische Skala 0–5):
 
----
+1. Sedierung / Entspannung  
+2. Aktivierung / Energie  
+3. Körperwirkung (Schmerz, Entzündung etc.)  
+4. Kopf / Klarheit / Mindset  
+5. Medizinisches Potenzial / Entourage-Fokus
 
-## β-Caryophyllen 🌶️
-
-- Aroma: **würzig, pfeffrig, holzig**  
-- Besonderheit: einziges Terpen mit direkter **CB2-Bindung**  
-- Mögliche Wirkung: balancierend, beruhigend, ausgleichend  
-
-[Mehr →]({{ site.baseurl }}/terpene/caryophyllen/)
-
-#### Mini-Terpen-Radar (symbolisch)
-
-<svg width="220" height="130" viewBox="0 0 100 60">
-  <polygon fill="rgba(61,220,132,0.18)" stroke="#3ddc84"
-    points="50,5 85,20 80,45 50,55 25,45 20,20" />
-</svg>
+Die Formen sind **qualitative Einschätzungen**, keine Laborwerte –  
+sie helfen dir, die Terpene auf einen Blick miteinander zu vergleichen.
 
 ---
 
-## Humulen 🍺
+## Wichtige Terpene im Überblick
 
-- Aroma: **holzig, hopfenartig**  
-- Mögliche Wirkung: balancierend, „erdend“, oft gemeinsam mit Caryophyllen  
-- Typisch: in hopfenähnlichen / herben Profilen  
+### Myrcen 🍃
 
-[Mehr →]({{ site.baseurl }}/terpene/humulen/)
-
-#### Mini-Terpen-Radar (symbolisch)
-
-<svg width="220" height="130" viewBox="0 0 100 60">
-  <polygon fill="rgba(61,220,132,0.18)" stroke="#3ddc84"
-    points="50,8 78,18 82,42 50,52 28,44 22,22" />
-</svg>
-
----
-
-## Limonen 🍋
-
-- Aroma: **zitronig, frisch, fruchtig**  
-- Mögliche Wirkung: stimmungsaufhellend, motivierend, „hell“ im Kopf  
-- Typisch: moderne US-Hybriden, Dessert-Strains  
-
-[Mehr →]({{ site.baseurl }}/terpene/limonen/)
-
-#### Mini-Terpen-Radar (symbolisch)
-
-<svg width="220" height="130" viewBox="0 0 100 60">
-  <polygon fill="rgba(61,220,132,0.2)" stroke="#3ddc84"
-    points="50,6 88,18 80,44 50,54 26,46 18,22" />
-</svg>
-
----
-
-## Linalool 🌸
-
-- Aroma: **lavendelartig, floral**  
-- Mögliche Wirkung: beruhigend, entspannend, „weich“  
-- Typisch: Strains mit stark floralem Bouquet  
-
-[Mehr →]({{ site.baseurl }}/terpene/linalool/)
-
-#### Mini-Terpen-Radar (symbolisch)
-
-<svg width="220" height="130" viewBox="0 0 100 60">
-  <polygon fill="rgba(61,220,132,0.18)" stroke="#3ddc84"
-    points="50,7 80,19 78,43 50,53 30,45 20,24" />
-</svg>
-
----
-
-## Myrcen 🌿
-
-- Aroma: **erdig, moschusartig, leicht süß**  
-- Mögliche Wirkung: körperlastig, sedierend („couch-lock“ bei hoher Konzentration)  
-- Oft dominant in **Indica-Hybriden**  
+- Aroma: erdig, moschusartig, leicht süß  
+- Mögliche Wirkung: stark entspannend, körperlastig  
+- Typisch in: vielen Indica-Hybriden  
 
 [Mehr →]({{ site.baseurl }}/terpene/myrcen/)
 
-#### Mini-Terpen-Radar (symbolisch)
-
-<svg width="220" height="130" viewBox="0 0 100 60">
-  <polygon fill="rgba(61,220,132,0.22)" stroke="#3ddc84"
-    points="50,5 82,21 78,46 50,55 24,46 18,21" />
-</svg>
-
----
-
-## Ocimen 🌱
-
-- Aroma: **frisch, kräuterig, leicht süß, floral**  
-- Mögliche Wirkung: klar, aktivierend, „helle Kopf-Note“  
-- Rolle: häufig Co-Terpen in sativa-lastigen oder exotischen Hybriden  
-
-[Mehr →]({{ site.baseurl }}/terpene/ocimen/)
-
-#### Mini-Terpen-Radar (symbolisch)
-
-<svg width="220" height="130" viewBox="0 0 100 60">
-  <polygon fill="rgba(61,220,132,0.2)" stroke="#3ddc84"
-    points="50,6 84,20 80,44 50,54 26,44 18,20" />
-</svg>
+<div class="terpen-radar-wrapper">
+  <svg class="terpen-radar" viewBox="0 0 100 100" aria-hidden="true">
+    <!-- Basis-Pentagon -->
+    <polygon class="terpen-radar-bg"
+      points="50,8 89.9,37 74.7,84 25.3,84 10.1,37" />
+    <!-- Myrcen-Profil: stark sedierend, starke Körperwirkung, hohes medizinisches Potenzial -->
+    <polygon class="terpen-radar-fill"
+      points="50,8 67.1,44.4 71.2,79.1 35.9,69.4 15.8,38.9" />
+    <circle class="terpen-radar-center" cx="50" cy="50" r="4" />
+  </svg>
+  <p class="terpen-radar-caption">
+    Hohe Sedierung und Körperwirkung, moderater Kopf-Effekt, starkes
+    medizinisches Potenzial – klassisches „schweres“ Indica-Terpen.
+  </p>
+</div>
 
 ---
 
-## Pinen 🌲
+### Limonen 🍋
 
-- Aroma: **kiefernartig, harzig, waldig**  
-- Mögliche Wirkung: klar, fokussiert, wach  
-- Häufig erwähnt als „Gegenpol“ zu sehr sedierenden Profilen  
+- Aroma: zitronig, frisch, fruchtig  
+- Mögliche Wirkung: aufhellend, stimmungsanhebend  
+- Typisch in: modernen US-Hybriden & Dessert-Strains  
+
+[Mehr →]({{ site.baseurl }}/terpene/limonen/)
+
+<div class="terpen-radar-wrapper">
+  <svg class="terpen-radar" viewBox="0 0 100 100" aria-hidden="true">
+    <polygon class="terpen-radar-bg"
+      points="50,8 89.9,37 74.7,84 25.3,84 10.1,37" />
+    <!-- Limonen-Profil: wenig Sedierung, starke Aktivierung, klares Kopf-High -->
+    <polygon class="terpen-radar-fill"
+      points="50,32 84.2,38.9 60.6,64.6 32.4,74.3 21.5,40.7" />
+    <circle class="terpen-radar-center" cx="50" cy="50" r="4" />
+  </svg>
+  <p class="terpen-radar-caption">
+    Kaum sedierend, deutlich aktivierend, eher kopflastig – typisches
+    „gute Laune“-Terpen mit moderatem medizinischem Potenzial.
+  </p>
+</div>
+
+---
+
+### β-Caryophyllen 🌶️
+
+- Aroma: würzig, pfeffrig, holzig  
+- Besonderheit: bindet direkt an CB2-Rezeptoren  
+- Mögliche Wirkung: balancierend, entspannend, entzündungshemmend  
+
+[Mehr →]({{ site.baseurl }}/terpene/caryophyllen/)
+
+<div class="terpen-radar-wrapper">
+  <svg class="terpen-radar" viewBox="0 0 100 100" aria-hidden="true">
+    <polygon class="terpen-radar-bg"
+      points="50,8 89.9,37 74.7,84 25.3,84 10.1,37" />
+    <!-- Caryophyllen: mittlere Sedierung, starke Körperwirkung, sehr hohes medizinisches Potenzial -->
+    <polygon class="terpen-radar-fill"
+      points="50,20 72.8,42.6 71.2,79.1 35.9,69.4 10.1,37" />
+    <circle class="terpen-radar-center" cx="50" cy="50" r="4" />
+  </svg>
+  <p class="terpen-radar-caption">
+    Stärkere Körperwirkung und sehr hoher medizinischer Fokus
+    (Entzündung, Schmerz), ohne extrem sedierend zu sein.
+  </p>
+</div>
+
+---
+
+### Pinen 🌲
+
+- Aroma: kiefernartig, frisch, harzig  
+- Mögliche Wirkung: aufmerksam, klarer Kopf  
+- Typisch in: Outdoor-Sativas, „Wald“-Profilen  
 
 [Mehr →]({{ site.baseurl }}/terpene/pinen/)
 
-#### Mini-Terpen-Radar (symbolisch)
-
-<svg width="220" height="130" viewBox="0 0 100 60">
-  <polygon fill="rgba(61,220,132,0.18)" stroke="#3ddc84"
-    points="50,7 82,18 78,44 50,53 28,45 20,22" />
-</svg>
+<div class="terpen-radar-wrapper">
+  <svg class="terpen-radar" viewBox="0 0 100 100" aria-hidden="true">
+    <polygon class="terpen-radar-bg"
+      points="50,8 89.9,37 74.7,84 25.3,84 10.1,37" />
+    <!-- Pinen: aktivierend, klarer Kopf, wenig Körperlast -->
+    <polygon class="terpen-radar-fill"
+      points="50,32 84.2,38.9 60.6,64.6 28.8,79.1 27.2,42.6" />
+    <circle class="terpen-radar-center" cx="50" cy="50" r="4" />
+  </svg>
+  <p class="terpen-radar-caption">
+    Deutlich kopfbetont, eher wach und klar, mit geringer sedierender
+    Komponente – typisch für „frische“ Sativa-Profile.
+  </p>
+</div>
 
 ---
 
-## Terpinolen ✨
+### Linalool 🌸
 
-- Aroma: **kräuterig, leicht blumig, frisch**  
-- Mögliche Wirkung: aktivierend, wach, oft „Haze-typisch“  
-- Typisch: Hazes, sativa-lastige Klassiker  
+- Aroma: lavendelartig, floral  
+- Mögliche Wirkung: beruhigend, angstlösend  
+- Typisch in: relax-orientierten Strains, Kush-/Lavendel-Hybriden  
+
+[Mehr →]({{ site.baseurl }}/terpene/linalool/)
+
+<div class="terpen-radar-wrapper">
+  <svg class="terpen-radar" viewBox="0 0 100 100" aria-hidden="true">
+    <polygon class="terpen-radar-bg"
+      points="50,8 89.9,37 74.7,84 25.3,84 10.1,37" />
+    <!-- Linalool: starke Sedierung, ausgeprägte Körperwirkung, hohes medizinisches Potenzial -->
+    <polygon class="terpen-radar-fill"
+      points="50,14 67.1,44.4 67.6,74.3 35.9,69.4 15.8,38.9" />
+    <circle class="terpen-radar-center" cx="50" cy="50" r="4" />
+  </svg>
+  <p class="terpen-radar-caption">
+    Stark beruhigend mit guter Körperwirkung, häufig in Strains für
+    Entspannung, Schlaf und Angstlinderung diskutiert.
+  </p>
+</div>
+
+---
+
+### Humulen 🍺
+
+- Aroma: holzig, hopfenartig (ähnlich IPA-Bier)  
+- Mögliche Wirkung: balancierend, potenziell appetitzügelnd  
+- Typisch in: hopfenähnlichen / „erdig-herben“ Strains  
+
+[Mehr →]({{ site.baseurl }}/terpene/humulen/)
+
+<div class="terpen-radar-wrapper">
+  <svg class="terpen-radar" viewBox="0 0 100 100" aria-hidden="true">
+    <polygon class="terpen-radar-bg"
+      points="50,8 89.9,37 74.7,84 25.3,84 10.1,37" />
+    <!-- Humulen: mittlere Sedierung, mittlere Aktivierung, solide Körperwirkung -->
+    <polygon class="terpen-radar-fill"
+      points="50,26 72.8,42.6 67.6,74.3 35.9,69.4 21.5,40.7" />
+    <circle class="terpen-radar-center" cx="50" cy="50" r="4" />
+  </svg>
+  <p class="terpen-radar-caption">
+    Ausgeglichenes, eher subtil wirkendes Terpen mit moderatem
+    medizinischem Potenzial und charakteristisch „hopfigem“ Aroma.
+  </p>
+</div>
+
+---
+
+### Terpinolen 🌿
+
+- Aroma: kräuterig, leicht blumig, manchmal fruchtig  
+- Mögliche Wirkung: eher aktivierend, „helles“ Kopf-High  
+- Typisch in: vielen Haze-Genetiken und „exotischen“ Hybriden  
 
 [Mehr →]({{ site.baseurl }}/terpene/terpinolen/)
 
-#### Mini-Terpen-Radar (symbolisch)
+<div class="terpen-radar-wrapper">
+  <svg class="terpen-radar" viewBox="0 0 100 100" aria-hidden="true">
+    <polygon class="terpen-radar-bg"
+      points="50,8 89.9,37 74.7,84 25.3,84 10.1,37" />
+    <!-- Terpinolen: sehr aktivierend, klar, wenig Körperlast -->
+    <polygon class="terpen-radar-fill"
+      points="50,32 89.9,37 60.6,64.6 28.8,79.1 21.5,40.7" />
+    <circle class="terpen-radar-center" cx="50" cy="50" r="4" />
+  </svg>
+  <p class="terpen-radar-caption">
+    Deutlich aktivierendes, kopflastiges Terpen – typisch für Haze-Strains,
+    oft mit „heller“, kreativer Wirkung beschrieben.
+  </p>
+</div>
 
-<svg width="220" height="130" viewBox="0 0 100 60">
-  <polygon fill="rgba(61,220,132,0.22)" stroke="#3ddc84"
-    points="50,5 86,20 80,45 50,55 24,45 16,20" />
-</svg>
+---
+
+### Ocimen 🌿✨
+
+- Aroma: frisch, kräuterig, leicht süß, florale Nuancen  
+- Mögliche Wirkung: eher klar, leicht aktivierend (subjektive Berichte)  
+- Typisch in: ausgewählten Sativa-/Exotic-Strains, Basilikum, Minze  
+
+[Mehr →]({{ site.baseurl }}/terpene/ocimen/)
+
+<div class="terpen-radar-wrapper">
+  <svg class="terpen-radar" viewBox="0 0 100 100" aria-hidden="true">
+    <polygon class="terpen-radar-bg"
+      points="50,8 89.9,37 74.7,84 25.3,84 10.1,37" />
+    <!-- Ocimen: leicht aktivierend, frische Kopf-Note, wenig Körperlast -->
+    <polygon class="terpen-radar-fill"
+      points="50,32 84.2,38.9 60.6,64.6 32.4,74.3 27.2,42.6" />
+    <circle class="terpen-radar-center" cx="50" cy="50" r="4" />
+  </svg>
+  <p class="terpen-radar-caption">
+    Frische, kräuterige Kopf-Note mit leichter Aktivierung und moderatem
+    medizinischem Potenzial – oft Co-Terpen in klaren, „grünen“ Profilen.
+  </p>
+</div>
 
 ---
 
 ## PDF: Vollständiges Terpenlexikon
 
-Hier findest du das komplette dokumentierte PDF mit detaillierten  
-Terpenprofilen, Studienreferenzen und erweiterten Tabellen:
+Hier findest du das komplette dokumentierte PDF:
 
 👉 [Terpen-Lexikon als PDF herunterladen]({{ site.baseurl }}/assets/terpene_lexikon.pdf)
 
@@ -176,6 +242,5 @@ Terpenprofilen, Studienreferenzen und erweiterten Tabellen:
 ## Demnächst
 
 - Terpen-Synergien (Entourage-Effekt)  
-- Terpen-Profile berühmter Strains (z. B. Gelato, OG Kush, Amnesia Haze)  
+- Terpen-Profile bestimmter berühmter Strains  
 - Tabelle: medizinische Wirkmodelle pro Terpen  
-- Interaktive Terpen-Matrix (Filter nach Wirkung, Aroma, Strain-Typ)  
