@@ -165,6 +165,25 @@
 
       <!-- MAIN CONTENT -->
       <main class="page-main">
+        <!-- TERPENE RADAR AUTO-INJECT -->
+{% if page.sidebar == "terpene" %}
+<div class="terpen-radar-wrapper">
+  <svg class="terpen-radar" viewBox="0 0 100 100">
+    <polygon class="terpen-radar-bg"
+      points="50,10 90,35 75,85 25,85 10,35" />
+    <polygon class="terpen-radar-fill"
+      points="50,20 78,40 65,70 35,70 22,40" />
+    <circle class="terpen-radar-center" cx="50" cy="50" r="4" />
+  </svg>
+
+  <div class="terpen-radar-caption">
+    <strong>Mini-Terpen-Radar (symbolisch)</strong><br>
+    Dieses Radar ist ein visueller Orientierungsmarker –  
+    kein Messwert, sondern ein standardisiertes Profil für das Lexikon.
+  </div>
+</div>
+{% endif %}
+
         {{ content }}
       </main>
 
