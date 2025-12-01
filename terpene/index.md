@@ -68,6 +68,14 @@ Kombinationen und typische medizinische Eigenschaften.
 
 ---
 
+### Ocimen
+- frisch, kräuterig, leicht süß  
+- mögliche Wirkung: klar, aktivierend  
+- häufig Co-Terpen in sativa-lastigen Strains  
+[Mehr →]({{ site.baseurl }}/terpene/ocimen/)
+
+---
+
 ## PDF: Vollständiges Terpenlexikon
 
 Hier findest du das komplette dokumentierte PDF:
