@@ -287,6 +287,8 @@ code {
   border: 1px solid var(--border-soft);
   box-shadow: var(--shadow-soft);
   padding: 1.25rem 1.15rem 1.35rem;
+   list-style: none;
+   
 }
 
 .sidebar-left {
